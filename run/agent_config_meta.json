@@ -1,0 +1,265 @@
+{
+  "keys": "/home/apple/projects/frontend/eggdemo/config/config.default.js",
+  "onerror": {
+    "json": "/home/apple/projects/frontend/eggdemo/config/config.default.js",
+    "errorPageUrl": "/home/apple/projects/frontend/eggdemo/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/home/apple/projects/frontend/eggdemo/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/home/apple/projects/frontend/eggdemo/node_modules/egg-onerror/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/home/apple/projects/frontend/eggdemo/node_modules/egg-session/config/config.default.js",
+    "key": "/home/apple/projects/frontend/eggdemo/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/home/apple/projects/frontend/eggdemo/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/home/apple/projects/frontend/eggdemo/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "type": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "useSession": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "headerName": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "queryName": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "value": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "value": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "value": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "policy": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/home/apple/projects/frontend/eggdemo/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/home/apple/projects/frontend/eggdemo/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/home/apple/projects/frontend/eggdemo/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/home/apple/projects/frontend/eggdemo/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/home/apple/projects/frontend/eggdemo/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/home/apple/projects/frontend/eggdemo/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/home/apple/projects/frontend/eggdemo/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/home/apple/projects/frontend/eggdemo/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/home/apple/projects/frontend/eggdemo/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/home/apple/projects/frontend/eggdemo/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/home/apple/projects/frontend/eggdemo/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/home/apple/projects/frontend/eggdemo/node_modules/egg-watcher/config/config.default.js",
+      "development": "/home/apple/projects/frontend/eggdemo/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/home/apple/projects/frontend/eggdemo/node_modules/egg-schedule/config/config.default.js",
+      "file": "/home/apple/projects/frontend/eggdemo/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/home/apple/projects/frontend/eggdemo/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "files": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/home/apple/projects/frontend/eggdemo/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/home/apple/projects/frontend/eggdemo/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/home/apple/projects/frontend/eggdemo/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/home/apple/projects/frontend/eggdemo/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/home/apple/projects/frontend/eggdemo/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/home/apple/projects/frontend/eggdemo/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/home/apple/projects/frontend/eggdemo/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/home/apple/projects/frontend/eggdemo/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/home/apple/projects/frontend/eggdemo/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/home/apple/projects/frontend/eggdemo/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/home/apple/projects/frontend/eggdemo/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/home/apple/projects/frontend/eggdemo/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/home/apple/projects/frontend/eggdemo/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/home/apple/projects/frontend/eggdemo/node_modules/egg-static/config/config.default.js",
+    "dir": "/home/apple/projects/frontend/eggdemo/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/home/apple/projects/frontend/eggdemo/node_modules/egg-static/config/config.default.js",
+    "preload": "/home/apple/projects/frontend/eggdemo/node_modules/egg-static/config/config.default.js",
+    "buffer": "/home/apple/projects/frontend/eggdemo/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/home/apple/projects/frontend/eggdemo/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/home/apple/projects/frontend/eggdemo/node_modules/egg-view/config/config.default.js",
+    "cache": "/home/apple/projects/frontend/eggdemo/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/home/apple/projects/frontend/eggdemo/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/home/apple/projects/frontend/eggdemo/node_modules/egg-view/config/config.default.js",
+    "mapping": "/home/apple/projects/frontend/eggdemo/node_modules/egg-view/config/config.default.js"
+  },
+  "validate": "/home/apple/projects/frontend/eggdemo/node_modules/egg-validate/config/config.default.js",
+  "env": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "name": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "proxy": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "version": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "description": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "main": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "dev": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+    },
+    "author": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "license": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "egg": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "egg-validate": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "HOME": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "rundir": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "notFound": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "sitefile": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "middlewares": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "httpClient": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "encoding": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "formLimit": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "textLimit": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "strict": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "depth": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "encoding": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "env": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "level": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "outputJSON": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "buffer": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "appLogName": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "coreLogName": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "agentLogName": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "errorLogName": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "logging": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "port": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+      "hostname": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/config.default.js"
+}

@@ -1,0 +1,209 @@
+2019-11-20 16:52:02,489 ERROR 18845 [-/127.0.0.1/-/5ms GET /drink/start] nodejs.ReferenceError: ctx is not defined
+    at DrinkController.start (/home/apple/projects/frontend/eggdemo/app/controller/drink.js:5:20)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at next (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:45:18)
+    at /home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:36:12
+
+pid: 18845
+hostname: apple
+
+2019-11-20 17:06:37,170 ERROR 19743 [-/::1/-/1ms GET /drink/start] nodejs.ReferenceError: ctx is not defined
+    at DrinkController.start (/home/apple/projects/frontend/eggdemo/app/controller/drink.js:6:5)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at next (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:45:18)
+    at /home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:36:12
+
+pid: 19743
+hostname: apple
+
+2019-11-20 17:06:51,162 ERROR 19743 [-/::1/-/1ms GET /drink/start] nodejs.ReferenceError: ctx is not defined
+    at DrinkController.start (/home/apple/projects/frontend/eggdemo/app/controller/drink.js:6:5)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at next (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:45:18)
+    at /home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:36:12
+
+pid: 19743
+hostname: apple
+
+2019-11-20 17:07:23,691 INFO 19835 [-/::1/-/15ms GET /drink/start] undefined
+2019-11-20 17:07:23,820 INFO 19835 [-/::1/-/1ms GET /drink/start] undefined
+2019-11-20 17:10:28,098 INFO 19835 [-/::1/-/1ms GET /drink/start?openid=acb] acb
+2019-11-20 17:10:28,158 INFO 19835 [-/::1/-/0ms GET /drink/start?openid=acb] acb
+2019-11-20 17:10:57,195 INFO 19960 [-/::1/-/5ms GET /drink/start?openid=acb] acb
+2019-11-20 17:10:57,252 INFO 19960 [-/::1/-/0ms GET /drink/start?openid=acb] acb
+2019-11-20 17:11:08,893 INFO 19960 [-/::1/-/0ms GET /drink/start?openid=] 
+2019-11-20 17:11:08,937 INFO 19960 [-/::1/-/0ms GET /drink/start?openid=] 
+2019-11-20 17:11:16,994 INFO 19960 [-/::1/-/0ms GET /drink/start] undefined
+2019-11-20 17:11:17,036 INFO 19960 [-/::1/-/1ms GET /drink/start] undefined
+2019-11-20 18:31:37,278 INFO 21494 [-/::1/-/1ms GET /drink/start?openid=a&unionid=b] a
+2019-11-20 18:31:37,330 INFO 21494 [-/::1/-/1ms GET /drink/start?openid=a&unionid=b] a
+2019-11-20 18:37:37,290 ERROR 22415 [-/::1/-/15ms GET /drink/start?openid=a&unionid=b] nodejs.ReferenceError: ctx is not defined
+    at DrinkController.start (/home/apple/projects/frontend/eggdemo/app/controller/drink.js:6:32)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at next (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:45:18)
+    at /home/apple/projects/frontend/eggdemo/app/middleware/drink.js:10:11
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at next (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:45:18)
+
+pid: 22415
+hostname: apple
+
+2019-11-20 18:50:03,379 ERROR 22895 [-/::1/-/6ms GET /drink/start] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/apple/projects/frontend/eggdemo/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/home/apple/projects/frontend/eggdemo/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 22895
+hostname: apple
+
+2019-11-20 18:50:31,011 ERROR 22955 [-/::1/-/7ms GET /drink/start] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/apple/projects/frontend/eggdemo/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/home/apple/projects/frontend/eggdemo/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 22955
+hostname: apple
+
+2019-11-20 19:17:21,543 ERROR 24305 [-/127.0.0.1/-/3ms GET /game/drink] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/apple/projects/frontend/eggdemo/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/home/apple/projects/frontend/eggdemo/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 24305
+hostname: apple
+
+2019-11-20 19:18:06,869 ERROR 24332 [-/127.0.0.1/-/8ms GET /game/drink] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/apple/projects/frontend/eggdemo/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/home/apple/projects/frontend/eggdemo/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 24332
+hostname: apple
+
+2019-11-20 19:18:25,682 ERROR 24332 [-/127.0.0.1/-/2ms GET /game/drink] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/apple/projects/frontend/eggdemo/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/home/apple/projects/frontend/eggdemo/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 24332
+hostname: apple
+
+2019-11-20 19:18:26,118 ERROR 24332 [-/127.0.0.1/-/0ms GET /game/drink] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/apple/projects/frontend/eggdemo/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/home/apple/projects/frontend/eggdemo/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 24332
+hostname: apple
+
+2019-11-20 19:18:37,536 ERROR 24404 [-/127.0.0.1/-/10ms GET /game/drink] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/apple/projects/frontend/eggdemo/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/home/apple/projects/frontend/eggdemo/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 24404
+hostname: apple
+
+2019-11-20 19:33:47,174 ERROR 25020 [-/127.0.0.1/-/7ms GET /game/drink?openid=abc&unionid=def] nodejs.ReferenceError: ctx is not defined
+    at DrinkController.index (/home/apple/projects/frontend/eggdemo/app/controller/game/drink.js:10:29)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at next (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:45:18)
+    at /home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at /home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:36:12
+
+pid: 25020
+hostname: apple
+
+2019-11-20 19:34:31,848 WARN 25125 [-/127.0.0.1/-/6ms GET /game/drink?openid=abc&unionid=def] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/home/apple/projects/frontend/eggdemo/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/home/apple/projects/frontend/eggdemo/node_modules/egg-validate/app/extend/context.js:14:17)
+    at DrinkController.index (/home/apple/projects/frontend/eggdemo/app/controller/game/drink.js:10:14)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:44:32)
+    at next (/home/apple/projects/frontend/eggdemo/node_modules/koa-compose/index.js:45:18)
+    at /home/apple/projects/frontend/eggdemo/node_modules/@eggjs/router/lib/router.js:190:18
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"openid","code":"missing_field"}]
+pid: 25125
+hostname: apple
+

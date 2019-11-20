@@ -1,0 +1,18 @@
+{
+  "name": "eggdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "egg-bin dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "egg": "^2.25.0",
+    "egg-validate": "^2.0.2"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.14.0"
+  }
+}
