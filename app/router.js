@@ -6,5 +6,5 @@ module.exports = app => {
   router.get('/', controller.home.index);
 
   // drink game restful routers
-  router.resources('/game/drink', controller.game.drink);
+  router.resources('/api/game/drink', controller.game.drink);
 };

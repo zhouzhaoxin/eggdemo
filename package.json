@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "egg-bin dev"
+    "dev": "egg-bin dev --sticky"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "egg": "^2.25.0",
+    "egg-socket.io": "^4.1.6",
     "egg-validate": "^2.0.2"
   },
   "devDependencies": {
