@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .card {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            margin: 1rem;
+            position: relative;
+            /*width: 300px;*/
+            height: 225px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+        .shadow {
+
+        }
+
+        .chosen {
+            position: absolute;
+            left: 1px;
+            top:  10px;
+            height: 180px;
+        }
+
+        .fix-div{
+            position: relative;
+            display: inline-block;
+        }
+        .cover {
+            background-color: rgba(234, 234, 234, 0.65);
+            width: 225px;
+            height: 225px;
+            position: absolute;
+        }
+        .center {
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .pos1 {
+            display: none;
+        }
+        .pos2 {
+            display: none;
+        }
+        .pos3 {
+            display: none;
+        }
+        .pos4 {
+            display: none;
+        }
+        .pos5 {
+            display: none;
+        }
+        .pos6 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--
+https://qncweb.ktvsky.com/20191122/leimeng/c37615c4ff83ba4dc910265d41d96379.jpeg
+-->
+<div class="center">
+    <div>
+        <div class="fix-div">
+            <div class="card">
+                <div class="cover pos1"></div>
+                <img src="https://qncweb.ktvsky.com/20191122/leimeng/8678099f91d2c69a56fa9b49ee5f9674.jpeg" alt="">
+            </div>
+            <img class="chosen pos1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
+        </div>
+        <div class="fix-div">
+            <div class="card">
+                <div class="cover pos2"></div>
+                <img src="https://qncweb.ktvsky.com/20191122/leimeng/50141834945a8b0cba4166149583a6e4.jpeg" alt="">
+            </div>
+            <img class="chosen pos2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
+        </div>
+        <div class="fix-div">
+            <div class="card">
+                <div class="cover pos3"></div>
+                <img src="https://qncweb.ktvsky.com/20191122/leimeng/9829d79422a5284ad2460f2d18c291b5.jpeg" alt="">
+            </div>
+            <img class="chosen pos3" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
+        </div>
+    </div>
+    <div>
+        <div class="fix-div">
+            <div class="card">
+                <div class="cover pos4"></div>
+                <img src="https://qncweb.ktvsky.com/20191122/leimeng/156ae5386f0691ce97beaf7e4563d2a7.jpeg" alt="">
+            </div>
+            <img class="chosen pos4" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
+        </div>
+        <div class="fix-div">
+            <div class="card">
+                <div class="cover pos5"></div>
+                <img src="https://qncweb.ktvsky.com/20191122/leimeng/c3b9da1dacdb8b3f427eaf8e2130962a.jpeg" alt="">
+            </div>
+            <img class="chosen pos5" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
+        </div>
+        <div class="fix-div">
+            <div class="card">
+                <div class="cover pos6"></div>
+                <img src="https://qncweb.ktvsky.com/20191122/leimeng/191fb9b91ec2f470be63f3f09ce5a3c4.jpeg" alt="">
+            </div>
+            <img class="chosen pos6" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
+        </div>
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/socket.io/2.1.0/socket.io.js"></script>
+<script src="https://cdn.bootcss.com/lodash.js/4.17.10/lodash.min.js"></script>
+<script>
+  let j = 2;
+  function hideAll() {
+    for(let i = 0;i<7 ;i++){
+      $(`.pos${i}`).hide()
+    }
+    show(j);
+    j++;
+  }
+  function show(i) {
+    $(`.pos${i}`).fadeIn("slow")
+  }
+  show(1);
+  setTimeout(hideAll, 1000);
+  setTimeout(hideAll, 2000);
+  setTimeout(hideAll, 3000);
+  setTimeout(hideAll, 4000);
+  setTimeout(hideAll, 5000);
+</script>
+</body>
+</html>

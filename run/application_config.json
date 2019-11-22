@@ -88,8 +88,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/home/apple/projects/frontend/eggdemo/node_modules/egg-onerror/lib/onerror_page.mustache",
-      "json": "<Function json>"
+      "templatePath": "/home/apple/projects/frontend/eggdemo/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -107,6 +106,9 @@
         "/home/apple/projects/frontend/eggdemo/node_modules/egg-static/config/locales",
         "/home/apple/projects/frontend/eggdemo/node_modules/egg-view/config/locales",
         "/home/apple/projects/frontend/eggdemo/node_modules/egg-validate/config/locales",
+        "/home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/config/locales",
+        "/home/apple/projects/frontend/eggdemo/node_modules/egg-redis/config/locales",
+        "/home/apple/projects/frontend/eggdemo/node_modules/egg-view-nunjucks/config/locales",
         "/home/apple/projects/frontend/eggdemo/node_modules/egg/config/locales",
         "/home/apple/projects/frontend/eggdemo/config/locales"
       ],
@@ -173,16 +175,62 @@
       "maxFiles": 1000
     },
     "view": {
-      "root": "/home/apple/projects/frontend/eggdemo/app/view",
+      "root": [
+        "/home/apple/projects/frontend/eggdemo/app/view"
+      ],
       "cache": false,
       "defaultExtension": ".html",
-      "defaultViewEngine": "",
-      "mapping": {}
+      "defaultViewEngine": "nunjucks",
+      "mapping": {
+        ".html": "nunjucks"
+      }
     },
     "validate": {},
+    "io": {
+      "init": {
+        "wsEngine": "ws",
+        "path": "/socket.io",
+        "allowRequest": "<Function bound >"
+      },
+      "namespace": {
+        "/": {
+          "connectionMiddleware": [
+            "auth"
+          ],
+          "packetMiddleware": []
+        },
+        "/example": {
+          "connectionMiddleware": [],
+          "packetMiddleware": []
+        }
+      },
+      "redis": {
+        "host": "127.0.0.1",
+        "port": 6379
+      }
+    },
+    "redis": {
+      "default": {},
+      "app": true,
+      "agent": false,
+      "supportTimeCommand": true,
+      "client": {
+        "port": 6379,
+        "host": "127.0.0.1",
+        "password": "<String len: 0>",
+        "db": 0
+      }
+    },
+    "nunjucks": {
+      "autoescape": true,
+      "throwOnUndefined": false,
+      "trimBlocks": false,
+      "lstripBlocks": false,
+      "cache": false
+    },
     "env": "local",
     "name": "eggdemo",
-    "keys": "<String len: 3>",
+    "keys": "<String len: 26>",
     "proxy": false,
     "maxIpsCount": 0,
     "maxProxyCount": 0,
@@ -193,15 +241,18 @@
       "name": "eggdemo",
       "version": "1.0.0",
       "description": "",
-      "main": "index.js",
       "scripts": {
-        "dev": "egg-bin dev"
+        "dev": "egg-bin dev --cluster --sticky"
       },
       "author": "",
       "license": "ISC",
       "dependencies": {
         "egg": "^2.25.0",
-        "egg-validate": "^2.0.2"
+        "egg-redis": "^2.4.0",
+        "egg-socket.io": "^4.1.6",
+        "egg-validate": "^2.0.2",
+        "egg-view-assets": "^1.6.0",
+        "egg-view-nunjucks": "^2.2.0"
       },
       "devDependencies": {
         "egg-bin": "^4.14.0"
@@ -309,9 +360,15 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "middleware": [
+      "errorHandler"
+    ],
+    "errorHandler": {
+      "match": "/api"
+    },
     "coreMiddlewares": "~config~coreMiddleware",
-    "appMiddlewares": [],
-    "appMiddleware": "~config~appMiddlewares",
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware",
     "multipartParseOptions": {
       "autoFields": false,
       "defCharset": "utf8",
@@ -482,6 +539,44 @@
       "from": "/home/apple/projects/frontend/eggdemo/config/plugin.js",
       "path": "/home/apple/projects/frontend/eggdemo/node_modules/egg-validate",
       "version": "2.0.2"
+    },
+    "io": {
+      "enable": true,
+      "package": "egg-socket.io",
+      "name": "io",
+      "dependencies": [
+        "session"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/home/apple/projects/frontend/eggdemo/config/plugin.js",
+      "path": "/home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io",
+      "version": "4.1.6"
+    },
+    "redis": {
+      "enable": true,
+      "package": "egg-redis",
+      "name": "redis",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/home/apple/projects/frontend/eggdemo/config/plugin.js",
+      "path": "/home/apple/projects/frontend/eggdemo/node_modules/egg-redis",
+      "version": "2.4.0"
+    },
+    "nunjucks": {
+      "enable": true,
+      "package": "egg-view-nunjucks",
+      "name": "nunjucks",
+      "dependencies": [
+        "security",
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/home/apple/projects/frontend/eggdemo/config/plugin.js",
+      "path": "/home/apple/projects/frontend/eggdemo/node_modules/egg-view-nunjucks",
+      "version": "2.2.0"
     }
   }
 }

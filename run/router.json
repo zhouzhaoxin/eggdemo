@@ -1,5 +1,31 @@
 [
   {
+    "name": "s",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/game/drink",
+    "regexp": "/^\\/api\\/game\\/drink(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "new_",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/game/drink/new",
+    "regexp": "/^\\/api\\/game\\/drink\\/new(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
     "name": null,
     "methods": [
       "HEAD",
@@ -13,27 +39,14 @@
     ]
   },
   {
-    "name": "s",
+    "name": null,
     "methods": [
       "HEAD",
       "GET"
     ],
     "paramNames": [],
-    "path": "/game/drink",
-    "regexp": "/^\\/game\\/drink(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": "new_",
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [],
-    "path": "/game/drink/new",
-    "regexp": "/^\\/game\\/drink\\/new(?:\\/(?=$))?$/",
+    "path": "/drink",
+    "regexp": "/^\\/drink(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
