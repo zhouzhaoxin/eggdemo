@@ -4,7 +4,8 @@ const Controller = require('egg').Controller;
 
 class DrinkController extends Controller {
   async index() {
-    await this.ctx.render('drink');
+    const {unionid, room} = this.ctx.query;
+    await this.ctx.render('drink', {unionid: unionid, room: room});
   }
 }
 

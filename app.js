@@ -3,6 +3,7 @@
 class AppBootHook {
   constructor(app) {
     this.app = app;
+    this.drinkPlayerPrefix = 'dpp'
   }
 
   configWillLoad() {
@@ -37,9 +38,54 @@ class AppBootHook {
 
      // 例如：从数据库加载数据到内存缓存
     // this.app.cacheData = await this.app.model.query(QUERY_CACHE_SQL);
-    const room = await this.app.redis.get('room:demo');
+
+    // drink游戏初始化：此处初始化假设系统有一个房间，并且系统存儲了六个用户的信息
+    const demoRoomRedisKey = 'room:demo';
+    const room = await this.app.redis.get(demoRoomRedisKey);
     if (!room) {
-      await this.app.redis.set('room:demo', 'demo');
+      await this.app.redis.set(demoRoomRedisKey, 'demo');
+    }
+    const playerARedisKey = `${this.drinkPlayerPrefix}_a`;
+    const playerAAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/8678099f91d2c69a56fa9b49ee5f9674.jpeg';
+    const playerA = await this.app.redis.get(playerARedisKey);
+    if (!playerA) {
+      await this.app.redis.set(playerARedisKey, playerAAvatar);
+    }
+    const playerBRedisKey = `${this.drinkPlayerPrefix}_b`;
+    const playerBAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/50141834945a8b0cba4166149583a6e4.jpeg';
+    const playerB = await this.app.redis.get(playerBRedisKey);
+    if (!playerB) {
+      await this.app.redis.set(playerBRedisKey, playerBAvatar);
+    }
+    const playerCRedisKey = `${this.drinkPlayerPrefix}_c`;
+    const playerCAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/c37615c4ff83ba4dc910265d41d96379.jpeg';
+    const playerC = await this.app.redis.get(playerCRedisKey);
+    if (!playerC) {
+      await this.app.redis.set(playerCRedisKey, playerCAvatar);
+    }
+    const playerDRedisKey = `${this.drinkPlayerPrefix}_d`;
+    const playerDAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/9829d79422a5284ad2460f2d18c291b5.jpeg';
+    const playerD = await this.app.redis.get(playerDRedisKey);
+    if (!playerD) {
+      await this.app.redis.set(playerDRedisKey, playerDAvatar);
+    }
+    const playerERedisKey = `${this.drinkPlayerPrefix}_e`;
+    const playerEAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/156ae5386f0691ce97beaf7e4563d2a7.jpeg';
+    const playerE = await this.app.redis.get(playerERedisKey);
+    if (!playerE) {
+      await this.app.redis.set(playerERedisKey, playerEAvatar);
+    }
+    const playerFRedisKey = `${this.drinkPlayerPrefix}_f`;
+    const playerFAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/c3b9da1dacdb8b3f427eaf8e2130962a.jpeg';
+    const playerF = await this.app.redis.get(playerFRedisKey);
+    if (!playerF) {
+      await this.app.redis.set(playerFRedisKey, playerFAvatar);
+    }
+    const playerGRedisKey = `${this.drinkPlayerPrefix}_g`;
+    const playerGAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/191fb9b91ec2f470be63f3f09ce5a3c4.jpeg';
+    const playerG = await this.app.redis.get(playerGRedisKey);
+    if (!playerG) {
+      await this.app.redis.set(playerGRedisKey, playerGAvatar);
     }
   }
 
