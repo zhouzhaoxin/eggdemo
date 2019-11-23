@@ -12,8 +12,9 @@
             position: relative;
             /*width: 300px;*/
             height: 225px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         }
+
         .shadow {
 
         }
@@ -21,20 +22,22 @@
         .chosen {
             position: absolute;
             left: 1px;
-            top:  10px;
+            top: 10px;
             height: 180px;
         }
 
-        .fix-div{
+        .fix-div {
             position: relative;
             display: inline-block;
         }
+
         .cover {
             background-color: rgba(234, 234, 234, 0.65);
             width: 225px;
             height: 225px;
             position: absolute;
         }
+
         .center {
             width: 800px;
             margin: 0 auto;
@@ -44,27 +47,29 @@
         .pos1 {
             display: none;
         }
+
         .pos2 {
             display: none;
         }
+
         .pos3 {
             display: none;
         }
+
         .pos4 {
             display: none;
         }
+
         .pos5 {
             display: none;
         }
+
         .pos6 {
             display: none;
         }
     </style>
 </head>
 <body>
-<!--
-https://qncweb.ktvsky.com/20191122/leimeng/c37615c4ff83ba4dc910265d41d96379.jpeg
--->
 <div class="center">
     <div>
         <div class="fix-div">
@@ -113,6 +118,8 @@ https://qncweb.ktvsky.com/20191122/leimeng/c37615c4ff83ba4dc910265d41d96379.jpeg
         </div>
     </div>
 </div>
+<input id="room" type="hidden" value="{{room}}">
+<input id="unionid" type="hidden" value="{{unionid}}">
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -121,22 +128,43 @@ https://qncweb.ktvsky.com/20191122/leimeng/c37615c4ff83ba4dc910265d41d96379.jpeg
 <script src="https://cdn.bootcss.com/lodash.js/4.17.10/lodash.min.js"></script>
 <script>
   let j = 2;
+
   function hideAll() {
-    for(let i = 0;i<7 ;i++){
-      $(`.pos${i}`).hide()
+    for (let i = 0; i < 7; i++) {
+      $(`.pos${i}`).fadeOut("slow")
     }
     show(j);
     j++;
   }
+
   function show(i) {
     $(`.pos${i}`).fadeIn("slow")
   }
+
   show(1);
   setTimeout(hideAll, 1000);
   setTimeout(hideAll, 2000);
   setTimeout(hideAll, 3000);
   setTimeout(hideAll, 4000);
   setTimeout(hideAll, 5000);
+  $(function () {
+    const socket = io('/drink', {
+      // 实际使用中可以在这里传递参数
+      query: {
+        room: $("#room").val(),
+        unionid: $("#unionid").val(),
+      },
+      transports: ['websocket']
+    });
+    socket.on('connect', () => {
+      const id = socket.id;
+      console.log('#connect,', id, socket);
+    });
+    socket.on('online', msg => {
+      console.log('#online,', msg);
+    });
+    window.socket = socket;
+  })
 </script>
 </body>
 </html>

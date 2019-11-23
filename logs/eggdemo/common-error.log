@@ -2647,3 +2647,414 @@ hostname: apple
 pid: 17434
 hostname: apple
 
+2019-11-22 18:20:59,767 ERROR 21814 nodejs.ClusterClientNoResponseError: client no response in 991261ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/home/apple/projects/frontend/eggdemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 21814
+hostname: apple
+
+2019-11-22 18:20:59,767 ERROR 21814 nodejs.ClusterClientNoResponseError: client no response in 991252ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/home/apple/projects/frontend/eggdemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 21814
+hostname: apple
+
+2019-11-22 18:20:59,768 ERROR 21814 nodejs.ClusterClientNoResponseError: client no response in 991261ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/home/apple/projects/frontend/eggdemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 21814
+hostname: apple
+
+2019-11-22 18:20:59,768 ERROR 21814 nodejs.ClusterClientNoResponseError: client no response in 991242ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/home/apple/projects/frontend/eggdemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 21814
+hostname: apple
+
+2019-11-22 18:50:00,990 ERROR 25920 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:57:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 25920
+hostname: apple
+
+2019-11-22 18:50:00,991 ERROR 25927 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:57:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 25927
+hostname: apple
+
+2019-11-22 18:50:01,004 ERROR 25935 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:57:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 25935
+hostname: apple
+
+2019-11-22 18:51:03,240 ERROR 25991 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 25991
+hostname: apple
+
+2019-11-22 18:51:03,272 ERROR 25998 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 25998
+hostname: apple
+
+2019-11-22 18:51:03,337 ERROR 26000 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 26000
+hostname: apple
+
+2019-11-22 18:51:03,402 ERROR 25993 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 25993
+hostname: apple
+
+2019-11-22 18:52:40,996 ERROR 26148 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 26148
+hostname: apple
+
+2019-11-22 19:06:00,090 ERROR 27186 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:59:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27186
+hostname: apple
+
+2019-11-22 19:06:00,141 ERROR 27173 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:59:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27173
+hostname: apple
+
+2019-11-22 19:06:00,149 ERROR 27168 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:59:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27168
+hostname: apple
+
+2019-11-22 19:48:45,226 ERROR 27796 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27796
+hostname: apple
+
+2019-11-22 19:48:45,269 ERROR 27802 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27802
+hostname: apple
+
+2019-11-22 19:48:45,333 ERROR 27812 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27812
+hostname: apple
+
+2019-11-22 20:07:30,078 ERROR 28439 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28439
+hostname: apple
+
+2019-11-22 20:07:30,086 ERROR 28457 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28457
+hostname: apple
+
+2019-11-22 20:07:30,171 ERROR 28441 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28441
+hostname: apple
+
+2019-11-22 20:11:24,727 ERROR 28687 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28687
+hostname: apple
+
+2019-11-22 20:11:24,782 ERROR 28674 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28674
+hostname: apple
+
+2019-11-22 20:11:24,732 ERROR 28690 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28690
+hostname: apple
+
+2019-11-22 20:11:40,502 ERROR 28807 nodejs.ReferenceError: id is not defined
+    at tick (/home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:23:36)
+    at /home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:34:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:7)
+
+pid: 28807
+hostname: apple
+
+2019-11-22 20:46:21,722 ERROR 29242 nodejs.ReferenceError: id is not defined
+    at tick (/home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:23:36)
+    at /home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:34:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:7)
+
+pid: 29242
+hostname: apple
+
+2019-11-22 20:47:01,988 ERROR 29387 nodejs.ReferenceError: id is not defined
+    at /home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:34:12
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:7)
+
+pid: 29387
+hostname: apple
+
+2019-11-22 20:47:03,029 ERROR 29387 nodejs.ReferenceError: id is not defined
+    at /home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:34:12
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:7)
+
+pid: 29387
+hostname: apple
+
+2019-11-22 20:47:37,009 ERROR 29531 nodejs.ReferenceError: id is not defined
+    at tick (/home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:23:36)
+    at /home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:34:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:7)
+
+pid: 29531
+hostname: apple
+
+2019-11-22 20:47:41,635 ERROR 29531 nodejs.ReferenceError: id is not defined
+    at tick (/home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:23:36)
+    at /home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:34:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:7)
+
+pid: 29531
+hostname: apple
+
+2019-11-22 20:48:36,727 ERROR 29685 nodejs.ReferenceError: id is not defined
+    at tick (/home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:23:36)
+    at /home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:35:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:7)
+
+pid: 29685
+hostname: apple
+
+2019-11-22 20:49:09,836 ERROR 29818 nodejs.ReferenceError: id is not defined
+    at tick (/home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:23:36)
+    at /home/apple/projects/frontend/eggdemo/app/io/middleware/drink.js:35:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async session (/home/apple/projects/frontend/eggdemo/node_modules/koa-session/index.js:41:7)
+
+pid: 29818
+hostname: apple
+
+2019-11-22 20:51:58,699 ERROR 30135 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30135
+hostname: apple
+
+2019-11-22 20:51:58,767 ERROR 30143 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30143
+hostname: apple
+
+2019-11-22 20:58:07,764 ERROR 30406 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30406
+hostname: apple
+
+2019-11-22 20:58:07,764 ERROR 30398 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30398
+hostname: apple
+
+2019-11-22 20:58:07,818 ERROR 30404 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30404
+hostname: apple
+
+2019-11-22 21:04:22,410 ERROR 30713 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30713
+hostname: apple
+
+2019-11-22 21:04:22,464 ERROR 30712 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30712
+hostname: apple
+
+2019-11-22 21:04:22,436 ERROR 30699 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30699
+hostname: apple
+
+2019-11-22 21:10:36,978 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:37,682 ERROR 31317 [-/127.0.0.1/-/7ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:38,567 ERROR 31317 [-/127.0.0.1/-/8ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:39,239 ERROR 31317 [-/127.0.0.1/-/7ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:40,405 ERROR 31317 [-/127.0.0.1/-/3ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:41,878 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:42,986 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:43,652 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:44,324 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:45,237 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:13:07,252 ERROR 31749 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 31749
+hostname: apple
+
+2019-11-22 21:13:07,273 ERROR 31739 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 31739
+hostname: apple
+
+2019-11-22 21:13:07,271 ERROR 31747 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 31747
+hostname: apple
+

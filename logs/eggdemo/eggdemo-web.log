@@ -1100,3 +1100,417 @@ errors: [{"message":"required","field":"openid","code":"missing_field"},{"messag
 pid: 17831
 hostname: apple
 
+2019-11-22 18:50:00,991 ERROR 25920 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:57:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 25920
+hostname: apple
+
+2019-11-22 18:50:00,992 ERROR 25927 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:57:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 25927
+hostname: apple
+
+2019-11-22 18:50:01,005 ERROR 25935 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:57:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 25935
+hostname: apple
+
+2019-11-22 18:51:03,241 ERROR 25991 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 25991
+hostname: apple
+
+2019-11-22 18:51:03,273 ERROR 25998 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 25998
+hostname: apple
+
+2019-11-22 18:51:03,338 ERROR 26000 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 26000
+hostname: apple
+
+2019-11-22 18:51:03,402 ERROR 25993 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 25993
+hostname: apple
+
+2019-11-22 18:52:41,000 ERROR 26148 [-/127.0.0.1/-/0ms GET /] nodejs.AssertionError: can't find middleware: drink_auth !
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-socket.io/lib/io.js:40:11
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:262:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 26148
+hostname: apple
+
+2019-11-22 18:54:52,658 INFO 26643 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&userId=client_0.4178278014483632&EIO=3&transport=websocket] #join demo
+2019-11-22 18:58:10,361 INFO 26882 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&userId=client_0.6781322687563331&EIO=3&transport=websocket] #join demo
+2019-11-22 18:58:10,369 INFO 26882 [-/127.0.0.1/-/7ms GET /socket.io/?room=demo&userId=client_0.6781322687563331&EIO=3&transport=websocket] #online_join [ '/drink#s1ru3ZFDGcn_t370AAAA' ]
+2019-11-22 18:58:19,628 INFO 26882 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&userId=client_0.3993361750353881&EIO=3&transport=websocket] #join demo
+2019-11-22 18:58:19,630 INFO 26882 [-/127.0.0.1/-/3ms GET /socket.io/?room=demo&userId=client_0.3993361750353881&EIO=3&transport=websocket] #online_join [ '/drink#s1ru3ZFDGcn_t370AAAA', '/drink#zVOqD4i7tl7BgVxzAAAB' ]
+2019-11-22 18:58:33,179 INFO 26882 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&userId=client_0.36793918190342656&EIO=3&transport=websocket] #join demo
+2019-11-22 18:58:33,181 INFO 26882 [-/127.0.0.1/-/3ms GET /socket.io/?room=demo&userId=client_0.36793918190342656&EIO=3&transport=websocket] #online_join [
+  '/drink#s1ru3ZFDGcn_t370AAAA',
+  '/drink#zVOqD4i7tl7BgVxzAAAB',
+  '/drink#Sg3SnChCf1TzCRcfAAAC'
+]
+2019-11-22 18:58:55,120 INFO 26882 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&userId=client_0.46111580267935004&EIO=3&transport=websocket] #join demo
+2019-11-22 18:58:55,125 INFO 26882 [-/127.0.0.1/-/6ms GET /socket.io/?room=demo&userId=client_0.46111580267935004&EIO=3&transport=websocket] #online_join [
+  '/drink#s1ru3ZFDGcn_t370AAAA',
+  '/drink#zVOqD4i7tl7BgVxzAAAB',
+  '/drink#ODd875ugz9jspfo_AAAD'
+]
+2019-11-22 18:59:03,573 INFO 26882 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&userId=client_0.184120843306685&EIO=3&transport=websocket] #join demo
+2019-11-22 18:59:03,575 INFO 26882 [-/127.0.0.1/-/4ms GET /socket.io/?room=demo&userId=client_0.184120843306685&EIO=3&transport=websocket] #online_join [
+  '/drink#s1ru3ZFDGcn_t370AAAA',
+  '/drink#zVOqD4i7tl7BgVxzAAAB',
+  '/drink#x1kE-bd8aVjSvf6tAAAE'
+]
+2019-11-22 19:00:00,499 INFO 26882 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&userId=client_0.1766956859734059&EIO=3&transport=websocket] #join demo
+2019-11-22 19:00:00,502 INFO 26882 [-/127.0.0.1/-/5ms GET /socket.io/?room=demo&userId=client_0.1766956859734059&EIO=3&transport=websocket] #online_join [
+  '/drink#s1ru3ZFDGcn_t370AAAA',
+  '/drink#zVOqD4i7tl7BgVxzAAAB',
+  '/drink#VCllkvduuLxWViuMAAAF'
+]
+2019-11-22 19:06:00,085 INFO 27166 [-/127.0.0.1/-/0ms GET /socket.io/?room=demo&userId=client_0.1766956859734059&EIO=3&transport=websocket] #join demo
+2019-11-22 19:06:00,087 INFO 27166 [-/127.0.0.1/-/3ms GET /socket.io/?room=demo&userId=client_0.1766956859734059&EIO=3&transport=websocket] #online_join [ '/drink#fFfzA80pkhypNwUrAAAA' ]
+2019-11-22 19:06:00,091 ERROR 27186 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:59:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27186
+hostname: apple
+
+2019-11-22 19:06:00,141 ERROR 27173 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:59:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27173
+hostname: apple
+
+2019-11-22 19:06:00,149 ERROR 27168 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:59:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27168
+hostname: apple
+
+2019-11-22 19:06:00,723 INFO 27168 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&userId=client_0.3993361750353881&EIO=3&transport=websocket] #join demo
+2019-11-22 19:06:00,727 INFO 27168 [-/127.0.0.1/-/4ms GET /socket.io/?room=demo&userId=client_0.3993361750353881&EIO=3&transport=websocket] #online_join [ '/drink#fFfzA80pkhypNwUrAAAA', '/drink#4975B7aQeMJZLOkXAAAA' ]
+2019-11-22 19:06:01,783 INFO 27168 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&userId=client_0.6781322687563331&EIO=3&transport=websocket] #join demo
+2019-11-22 19:06:01,790 INFO 27168 [-/127.0.0.1/-/9ms GET /socket.io/?room=demo&userId=client_0.6781322687563331&EIO=3&transport=websocket] #online_join [
+  '/drink#fFfzA80pkhypNwUrAAAA',
+  '/drink#4975B7aQeMJZLOkXAAAA',
+  '/drink#i2U5xRTyL_n92woQAAAB'
+]
+2019-11-22 19:18:03,752 INFO 27452 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&userId=client_0.3993361750353881&EIO=3&transport=websocket] #join demo
+2019-11-22 19:18:03,761 INFO 27452 [-/127.0.0.1/-/10ms GET /socket.io/?room=demo&userId=client_0.3993361750353881&EIO=3&transport=websocket] #online_join [ '/drink#Pu-YjejgZlAXn7ihAAAA' ]
+2019-11-22 19:18:03,773 INFO 27452 [-/127.0.0.1/-/0ms GET /socket.io/?room=demo&userId=client_0.6781322687563331&EIO=3&transport=websocket] #join demo
+2019-11-22 19:18:03,775 INFO 27452 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&userId=client_0.6781322687563331&EIO=3&transport=websocket] #online_join [ '/drink#Pu-YjejgZlAXn7ihAAAA', '/drink#59H8Pv2bIsDWlC-UAAAB' ]
+2019-11-22 19:18:06,554 INFO 27452 [-/127.0.0.1/-/0ms GET /socket.io/?room=demo&userId=client_0.1766956859734059&EIO=3&transport=websocket] #join demo
+2019-11-22 19:18:06,556 INFO 27452 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&userId=client_0.1766956859734059&EIO=3&transport=websocket] #online_join [
+  '/drink#Pu-YjejgZlAXn7ihAAAA',
+  '/drink#59H8Pv2bIsDWlC-UAAAB',
+  '/drink#td2adXSYSvmmaUl6AAAC'
+]
+2019-11-22 19:48:45,234 ERROR 27796 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27796
+hostname: apple
+
+2019-11-22 19:48:45,320 INFO 27796 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&userId=client_0.1766956859734059&EIO=3&transport=websocket] #join demo
+2019-11-22 19:48:45,322 INFO 27796 [-/127.0.0.1/-/3ms GET /socket.io/?room=demo&userId=client_0.1766956859734059&EIO=3&transport=websocket] #online_join [ '/drink#dZWNA3Fgj3hPLq1DAAAA' ]
+2019-11-22 19:48:45,270 ERROR 27802 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27802
+hostname: apple
+
+2019-11-22 19:48:45,757 INFO 27802 [-/127.0.0.1/-/3ms GET /socket.io/?room=demo&userId=client_0.3993361750353881&EIO=3&transport=websocket] #join demo
+2019-11-22 19:48:45,773 INFO 27802 [-/127.0.0.1/-/17ms GET /socket.io/?room=demo&userId=client_0.3993361750353881&EIO=3&transport=websocket] #online_join [ '/drink#dZWNA3Fgj3hPLq1DAAAA', '/drink#r1oSXpE9SIo97O8mAAAA' ]
+2019-11-22 19:48:45,776 INFO 27802 [-/127.0.0.1/-/0ms GET /socket.io/?room=demo&userId=client_0.6781322687563331&EIO=3&transport=websocket] #join demo
+2019-11-22 19:48:45,779 INFO 27802 [-/127.0.0.1/-/3ms GET /socket.io/?room=demo&userId=client_0.6781322687563331&EIO=3&transport=websocket] #online_join [
+  '/drink#r1oSXpE9SIo97O8mAAAA',
+  '/drink#X0OooIMDEoaQo3KkAAAB',
+  '/drink#dZWNA3Fgj3hPLq1DAAAA'
+]
+2019-11-22 19:48:45,333 ERROR 27812 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 27812
+hostname: apple
+
+2019-11-22 19:48:47,390 INFO 27802 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&userId=client_0.6658573072953715&EIO=3&transport=websocket] #join demo
+2019-11-22 19:48:47,392 INFO 27802 [-/127.0.0.1/-/3ms GET /socket.io/?room=demo&userId=client_0.6658573072953715&EIO=3&transport=websocket] #online_join [
+  '/drink#r1oSXpE9SIo97O8mAAAA',
+  '/drink#X0OooIMDEoaQo3KkAAAB',
+  '/drink#kgXoikYURxm5AGkLAAAC'
+]
+2019-11-22 20:05:00,863 INFO 27802 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:05:00,867 INFO 27802 [-/127.0.0.1/-/5ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#C4hSMMcmgteUAQlmAAAD' ]
+2019-11-22 20:05:11,952 INFO 27802 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:05:11,955 INFO 27802 [-/127.0.0.1/-/4ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#XHkITx27MyNdECRYAAAE' ]
+2019-11-22 20:07:30,078 ERROR 28439 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28439
+hostname: apple
+
+2019-11-22 20:07:30,125 INFO 28439 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:07:30,086 ERROR 28457 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28457
+hostname: apple
+
+2019-11-22 20:07:30,172 ERROR 28441 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28441
+hostname: apple
+
+2019-11-22 20:07:35,130 INFO 28439 [-/127.0.0.1/-/5006ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#JDyMyzTqb5f4vL7gAAAA' ]
+2019-11-22 20:08:48,472 INFO 28563 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:08:48,476 INFO 28563 [-/127.0.0.1/-/5ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#e10zCNZMpo9f4Q-HAAAA' ]
+2019-11-22 20:08:59,126 INFO 28563 [-/127.0.0.1/-/0ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:08:59,127 INFO 28563 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#e10zCNZMpo9f4Q-HAAAA', '/drink#fgbgD3cdw8YKfkFsAAAB' ]
+2019-11-22 20:11:24,728 ERROR 28687 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28687
+hostname: apple
+
+2019-11-22 20:11:24,783 ERROR 28674 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28674
+hostname: apple
+
+2019-11-22 20:11:24,733 ERROR 28690 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 28690
+hostname: apple
+
+2019-11-22 20:49:27,872 INFO 29969 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:49:27,876 INFO 29969 [-/127.0.0.1/-/6ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#fBU0kRTbL3vdtXrtAAAA' ]
+2019-11-22 20:49:32,210 INFO 30070 [-/127.0.0.1/-/11ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:49:32,221 INFO 30070 [-/127.0.0.1/-/19ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#NibCJ8UBHLSymA8MAAAA' ]
+2019-11-22 20:51:58,700 ERROR 30135 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30135
+hostname: apple
+
+2019-11-22 20:51:58,768 ERROR 30143 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30143
+hostname: apple
+
+2019-11-22 20:52:24,771 INFO 30274 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:52:24,774 INFO 30274 [-/127.0.0.1/-/5ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#JIz8Euy9LWrSmCfhAAAA' ]
+2019-11-22 20:58:07,764 ERROR 30406 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30406
+hostname: apple
+
+2019-11-22 20:58:07,764 ERROR 30398 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30398
+hostname: apple
+
+2019-11-22 20:58:07,820 ERROR 30404 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30404
+hostname: apple
+
+2019-11-22 20:58:08,274 INFO 30404 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:58:08,277 INFO 30404 [-/127.0.0.1/-/3ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#e7Vv_QfdOcMZERLhAAAA' ]
+2019-11-22 20:58:16,952 INFO 30404 [-/127.0.0.1/-/0ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:58:16,957 INFO 30404 [-/127.0.0.1/-/6ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#EMNrfp3Ksld1IyswAAAB' ]
+2019-11-22 20:58:42,314 INFO 30404 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 20:58:42,317 INFO 30404 [-/127.0.0.1/-/4ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#TTtB_C8ThMgsHGy9AAAC' ]
+2019-11-22 21:00:59,615 INFO 30404 [-/127.0.0.1/-/0ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 21:00:59,620 INFO 30404 [-/127.0.0.1/-/5ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#dLUj8yoRT7PxmWSLAAAD' ]
+2019-11-22 21:01:14,714 INFO 30404 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&unionid=b&EIO=3&transport=websocket] #join demo
+2019-11-22 21:01:14,719 INFO 30404 [-/127.0.0.1/-/6ms GET /socket.io/?room=demo&unionid=b&EIO=3&transport=websocket] #online_join [ '/drink#dLUj8yoRT7PxmWSLAAAD', '/drink#7ejMoPwuDTRNp-4bAAAE' ]
+2019-11-22 21:04:22,410 ERROR 30713 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30713
+hostname: apple
+
+2019-11-22 21:04:22,766 INFO 30701 [-/127.0.0.1/-/11ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 21:04:22,775 INFO 30701 [-/127.0.0.1/-/17ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#wcvm3PrsghOY08k3AAAA' ]
+2019-11-22 21:04:22,464 ERROR 30712 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30712
+hostname: apple
+
+2019-11-22 21:04:22,437 ERROR 30699 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 30699
+hostname: apple
+
+2019-11-22 21:04:23,722 INFO 30701 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&unionid=b&EIO=3&transport=websocket] #join demo
+2019-11-22 21:04:23,727 INFO 30701 [-/127.0.0.1/-/6ms GET /socket.io/?room=demo&unionid=b&EIO=3&transport=websocket] #online_join [ '/drink#wcvm3PrsghOY08k3AAAA', '/drink#OB4Vu-qpAP1ekkREAAAB' ]
+2019-11-22 21:07:39,753 INFO 30929 [-/127.0.0.1/-/5ms GET /socket.io/?room=demo&unionid=b&EIO=3&transport=websocket] #join demo
+2019-11-22 21:07:39,756 INFO 30929 [-/127.0.0.1/-/7ms GET /socket.io/?room=demo&unionid=b&EIO=3&transport=websocket] #online_join [ '/drink#UjKme8S7BERfbs2pAAAA' ]
+2019-11-22 21:07:41,725 INFO 30929 [-/127.0.0.1/-/0ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 21:07:41,732 INFO 30929 [-/127.0.0.1/-/7ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#UjKme8S7BERfbs2pAAAA', '/drink#eXiErzbLZpjdWSACAAAB' ]
+2019-11-22 21:10:36,978 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:37,682 ERROR 31317 [-/127.0.0.1/-/7ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:38,568 ERROR 31317 [-/127.0.0.1/-/8ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:39,239 ERROR 31317 [-/127.0.0.1/-/7ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:40,405 ERROR 31317 [-/127.0.0.1/-/3ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:41,879 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:42,986 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:43,652 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:44,324 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:45,237 ERROR 31317 [-/127.0.0.1/-/4ms GET /socket.io/?room=&unionid=&EIO=3&transport=websocket] null
+2019-11-22 21:10:58,183 INFO 31589 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 21:10:58,187 INFO 31589 [-/127.0.0.1/-/3ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#4wKGmiK46JsC66c8AAAA' ]
+2019-11-22 21:11:46,243 INFO 31589 [-/127.0.0.1/-/1ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 21:11:46,245 INFO 31589 [-/127.0.0.1/-/2ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#4wKGmiK46JsC66c8AAAA', '/drink#I81NNYxtUkDC9_IgAAAB' ]
+2019-11-22 21:13:07,835 INFO 31745 [-/127.0.0.1/-/6ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #join demo
+2019-11-22 21:13:07,838 INFO 31745 [-/127.0.0.1/-/8ms GET /socket.io/?room=demo&unionid=a&EIO=3&transport=websocket] #online_join [ '/drink#MYSmQXKsDJrx737iAAAA' ]
+2019-11-22 21:13:07,253 ERROR 31749 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 31749
+hostname: apple
+
+2019-11-22 21:13:07,274 ERROR 31739 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 31739
+hostname: apple
+
+2019-11-22 21:13:07,272 ERROR 31747 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'on' of null
+    at AppBootHook.serverDidReady (/home/apple/projects/frontend/eggdemo/app.js:103:21)
+    at Object.callFn (/home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/utils/index.js:44:21)
+    at /home/apple/projects/frontend/eggdemo/node_modules/egg-core/lib/lifecycle.js:204:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 31747
+hostname: apple
+

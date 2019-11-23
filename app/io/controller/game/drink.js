@@ -3,11 +3,10 @@ const Controller = require('egg').Controller;
 class DrinkController extends Controller {
   async index() {
     const { ctx, app } = this;
-    const nsp = app.io.of('/');
+    const nsp = app.io.of('/drink');
     const message = ctx.args[0] || {};
     const socket = ctx.socket;
     const client = socket.id;
-
     try {
       const { target, payload } = message;
       if (!target) return;
