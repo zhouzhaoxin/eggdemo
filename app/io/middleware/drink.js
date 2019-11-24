@@ -7,10 +7,13 @@ module.exports = () => {
   return async (ctx, next) => {
     const {app, socket, logger, helper} = ctx;
     const nsp = app.io.of('/drink');
+
     const query = socket.handshake.query;
 
     // 用户信息
     const {room, unionid} = query;
+    // 使用unionid作为socket id
+    socket.id = unionid;
     const rooms = [room];
 
     const tick = (unionid, msg) => {
@@ -29,7 +32,6 @@ module.exports = () => {
     // 备注：此处 app.redis 与插件无关，可用其他存储代替
     const hasRoom = await app.redis.get(`${PREFIX}:${room}`);
     const hasAvatar = await app.redis.get(`${drinkPlayerPrefix}_${unionid}`);
-    console.log(hasAvatar);
     if (!(hasRoom && hasAvatar)) {
       console.log("no room or avatar", unionid);
       tick(unionid, {
@@ -44,12 +46,18 @@ module.exports = () => {
     socket.join(room);
 
     // 在线列表
-    nsp.adapter.clients(rooms, (err, clients) => {
+    nsp.adapter.clients(rooms, async (err, clients) => {
       logger.info('#online_join', clients);
-
+      let clientList = [];
+      for (let i = 0;i<clients.length;i++){
+        let clientsData = {};
+        clientsData['avatar'] = await app.redis.get(`${drinkPlayerPrefix}_${clients[0]}`);
+        clientsData['client'] = clients[i];
+        clientList.push(clientsData)
+      }
       // 更新在线用户列表
       nsp.to(room).emit('online', {
-        clients,
+        clientList,
         action: 'join',
         unionid: unionid,
         avatar: hasAvatar,

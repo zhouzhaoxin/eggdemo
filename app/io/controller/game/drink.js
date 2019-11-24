@@ -11,7 +11,7 @@ class DrinkController extends Controller {
       const { target, payload } = message;
       if (!target) return;
       const msg = ctx.helper.parseMsg('exchange', payload, { client, target });
-      nsp.emit('demo', msg);
+      nsp.emit(client, msg);
     } catch (error) {
       app.logger.error(error);
     }
