@@ -9,6 +9,7 @@ module.exports = () => {
     const nsp = app.io.of('/drink');
 
     const query = socket.handshake.query;
+    // todo 判断用户存在后不允许再次加入房间
 
     // 用户信息
     const {room, unionid} = query;
@@ -42,16 +43,15 @@ module.exports = () => {
     }
 
     // 用户加入
-    logger.info('#join', room);
     socket.join(room);
 
     // 在线列表
     nsp.adapter.clients(rooms, async (err, clients) => {
-      logger.info('#online_join', clients);
       let clientList = [];
-      for (let i = 0;i<clients.length;i++){
+      for (let i = 0; i < clients.length; i++) {
         let clientsData = {};
-        clientsData['avatar'] = await app.redis.get(`${drinkPlayerPrefix}_${clients[0]}`);
+        let client = clients[i];
+        clientsData['avatar'] = await app.redis.get(`${drinkPlayerPrefix}_${client}`);
         clientsData['client'] = clients[i];
         clientList.push(clientsData)
       }
@@ -70,23 +70,21 @@ module.exports = () => {
     logger.debug('#leave', room);
 
     // 在线列表
-    nsp.adapter.clients(rooms, (err, clients) => {
-      logger.debug('#online_leave', clients);
-
-      // 获取 client 信息
-      // const clientsDetail = {};
-      // clients.forEach(client => {
-      //   const _client = app.io.sockets.sockets[client];
-      //   const _query = _client.handshake.query;
-      //   clientsDetail[client] = _query;
-      // });
-
+    nsp.adapter.clients(rooms, async (err, clients) => {
+      let clientList = [];
+      for (let i = 0; i < clients.length; i++) {
+        let clientsData = {};
+        let client = clients[i];
+        clientsData['avatar'] = await app.redis.get(`${drinkPlayerPrefix}_${client}`);
+        clientsData['client'] = clients[i];
+        clientList.push(clientsData)
+      }
       // 更新在线用户列表
       nsp.to(room).emit('online', {
-        clients,
+        clientList,
         action: 'leave',
-        target: 'participator',
-        message: `User(${unionid}) leaved.`,
+        unionid: unionid,
+        avatar: hasAvatar,
       });
     });
 
