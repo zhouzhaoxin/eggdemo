@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.bootcss.com/jquery-toast-plugin/1.3.2/jquery.toast.min.css" rel="stylesheet">
     <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+
+        html {
+            padding-top: 50px;
+            font-family: 'Open Sans', Helvetica, arial, sans-serif;
+            text-align: center;
+            background-color: #eeeeee;
+        }
+
+        html *,
+        html *:before,
+        html *:after {
+            box-sizing: border-box;
+            transition: 0.5s ease-in-out;
+        }
+
+        html i, html em,
+        html b, html strong,
+        html span {
+            transition: none;
+        }
+
+        *:before,
+        *:after {
+            z-index: -1;
+        }
+
         .card {
             background: #fff;
             border-radius: 2px;
             display: inline-block;
             margin: 1rem;
             position: relative;
-            /*width: 300px;*/
             height: 225px;
+            width: 225px;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        }
-
-        .shadow {
-
         }
 
         .chosen {
@@ -67,6 +91,171 @@
         .pos6 {
             display: none;
         }
+
+        #img1 {
+            width: 225px;
+            height: 225px;
+        }
+
+        #img2 {
+            width: 225px;
+            height: 225px;
+        }
+
+        #img3 {
+            width: 225px;
+            height: 225px;
+        }
+
+        #img4 {
+            width: 225px;
+            height: 225px;
+        }
+
+        #img5 {
+            width: 225px;
+            height: 225px;
+        }
+
+        #img6 {
+            width: 225px;
+            height: 225px;
+        }
+
+        a {
+            text-decoration: none;
+            line-height: 80px;
+            color: black;
+        }
+
+        [class^="btn-"] {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: 80px;
+            max-width: 250px;
+            margin: 1rem auto;
+            text-transform: uppercase;
+            border: 1px solid currentColor;
+        }
+
+        @-webkit-keyframes criss-cross-left {
+            0% {
+                left: -20px;
+            }
+            50% {
+                left: 50%;
+                width: 20px;
+                height: 20px;
+            }
+            100% {
+                left: 50%;
+                width: 375px;
+                height: 375px;
+            }
+        }
+
+        @keyframes criss-cross-left {
+            0% {
+                left: -20px;
+            }
+            50% {
+                left: 50%;
+                width: 20px;
+                height: 20px;
+            }
+            100% {
+                left: 50%;
+                width: 375px;
+                height: 375px;
+            }
+        }
+
+        @-webkit-keyframes criss-cross-right {
+            0% {
+                right: -20px;
+            }
+            50% {
+                right: 50%;
+                width: 20px;
+                height: 20px;
+            }
+            100% {
+                right: 50%;
+                width: 375px;
+                height: 375px;
+            }
+        }
+
+        @keyframes criss-cross-right {
+            0% {
+                right: -20px;
+            }
+            50% {
+                right: 50%;
+                width: 20px;
+                height: 20px;
+            }
+            100% {
+                right: 50%;
+                width: 375px;
+                height: 375px;
+            }
+        }
+
+        @media (min-width: 600px) {
+            .wrap {
+                width: 50%;
+                float: left;
+            }
+        }
+
+
+        .btn-1 {
+            position: relative;
+            color: #b32bbe;
+        }
+
+        .btn-1:before, .btn-1:after {
+            position: absolute;
+            top: 50%;
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: #a506b2;
+            border-radius: 50%;
+        }
+
+        .btn-1:before {
+            left: -20px;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .btn-1:after {
+            right: -20px;
+            -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+        }
+
+        .btn-1:hover {
+            color: #e9c1ec;
+        }
+
+        .btn-1:hover:before {
+            -webkit-animation: criss-cross-left 0.8s both;
+            animation: criss-cross-left 0.8s both;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+        }
+
+        .btn-1:hover:after {
+            -webkit-animation: criss-cross-right 0.8s both;
+            animation: criss-cross-right 0.8s both;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+        }
     </style>
 </head>
 <body>
@@ -74,22 +263,26 @@
     <div>
         <div class="fix-div">
             <div class="card">
+                <!-- 只能在 cover pos[X]之后追加class -->
                 <div class="cover pos1"></div>
-                <img src="https://qncweb.ktvsky.com/20191122/leimeng/8678099f91d2c69a56fa9b49ee5f9674.jpeg" alt="">
+                <img id="img1" src="https://qncweb.ktvsky.com/20191124/leimeng/2b27c559bcbdedd1db8b6f477926ed61.jpeg"
+                     alt="">
             </div>
             <img class="chosen pos1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
         </div>
         <div class="fix-div">
             <div class="card">
                 <div class="cover pos2"></div>
-                <img src="https://qncweb.ktvsky.com/20191122/leimeng/50141834945a8b0cba4166149583a6e4.jpeg" alt="">
+                <img id="img2" src="https://qncweb.ktvsky.com/20191124/leimeng/2b27c559bcbdedd1db8b6f477926ed61.jpeg"
+                     alt="">
             </div>
             <img class="chosen pos2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
         </div>
         <div class="fix-div">
             <div class="card">
                 <div class="cover pos3"></div>
-                <img src="https://qncweb.ktvsky.com/20191122/leimeng/9829d79422a5284ad2460f2d18c291b5.jpeg" alt="">
+                <img id="img3" src="https://qncweb.ktvsky.com/20191124/leimeng/2b27c559bcbdedd1db8b6f477926ed61.jpeg"
+                     alt="">
             </div>
             <img class="chosen pos3" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
         </div>
@@ -97,74 +290,144 @@
     <div>
         <div class="fix-div">
             <div class="card">
+
                 <div class="cover pos4"></div>
-                <img src="https://qncweb.ktvsky.com/20191122/leimeng/156ae5386f0691ce97beaf7e4563d2a7.jpeg" alt="">
+                <img id="img4" src="https://qncweb.ktvsky.com/20191124/leimeng/2b27c559bcbdedd1db8b6f477926ed61.jpeg"
+                     alt="">
             </div>
             <img class="chosen pos4" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
         </div>
         <div class="fix-div">
             <div class="card">
                 <div class="cover pos5"></div>
-                <img src="https://qncweb.ktvsky.com/20191122/leimeng/c3b9da1dacdb8b3f427eaf8e2130962a.jpeg" alt="">
+                <img id="img5" src="https://qncweb.ktvsky.com/20191124/leimeng/2b27c559bcbdedd1db8b6f477926ed61.jpeg"
+                     alt="">
             </div>
             <img class="chosen pos5" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
         </div>
         <div class="fix-div">
             <div class="card">
                 <div class="cover pos6"></div>
-                <img src="https://qncweb.ktvsky.com/20191122/leimeng/191fb9b91ec2f470be63f3f09ce5a3c4.jpeg" alt="">
+                <img id="img6" src="https://qncweb.ktvsky.com/20191124/leimeng/2b27c559bcbdedd1db8b6f477926ed61.jpeg"
+                     alt="">
             </div>
             <img class="chosen pos6" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
         </div>
     </div>
+    <a class="btn-1" href="#">开始游戏</a>
 </div>
+
 <input id="room" type="hidden" value="{{room}}">
 <input id="unionid" type="hidden" value="{{unionid}}">
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+<!-- socket io -->
 <script src="https://cdn.bootcss.com/socket.io/2.1.0/socket.io.js"></script>
 <script src="https://cdn.bootcss.com/lodash.js/4.17.10/lodash.min.js"></script>
+<!-- toast-->
+<script src="https://cdn.bootcss.com/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script>
 <script>
-  let j = 2;
+  const defaultAvatar = 'https://qncweb.ktvsky.com/20191124/leimeng/2b27c559bcbdedd1db8b6f477926ed61.jpeg';
+  let currentUserCount = 0;
+  let startStatus = 0;
 
-  function hideAll() {
-    for (let i = 0; i < 7; i++) {
-      $(`.pos${i}`).fadeOut("slow")
-    }
-    show(j);
-    j++;
-  }
-
-  function show(i) {
-    $(`.pos${i}`).fadeIn("slow")
-  }
-
-  show(1);
-  setTimeout(hideAll, 1000);
-  setTimeout(hideAll, 2000);
-  setTimeout(hideAll, 3000);
-  setTimeout(hideAll, 4000);
-  setTimeout(hideAll, 5000);
   $(function () {
+    $(".btn-1").on('click', (e) => {
+      if (currentUserCount < 2) {
+        $.toast({
+          text: "房间内至少有两个人才能开始游戏",
+          heading: '提示',
+          icon: 'warning',
+          showHideTransition: 'fade',
+          allowToastClose: true,
+          hideAfter: 3000,
+          stack: 5,
+          position: 'mid-center',
+          textAlign: 'left',
+          loader: true,
+          loaderBg: '#9ec600',
+        });
+      }
+      start()
+    });
+    // 加入房间
     const socket = io('/drink', {
-      // 实际使用中可以在这里传递参数
       query: {
         room: $("#room").val(),
         unionid: $("#unionid").val(),
       },
       transports: ['websocket']
     });
+
+    // 监听用户连接时间，实际使用中在此处初始化所有在线用户
     socket.on('connect', () => {
       const id = socket.id;
       console.log('#connect,', id, socket);
     });
+
+    // 处理用户加入和离开，目前只是使用本方法测试，所以把用户初始化也写到此处
     socket.on('online', msg => {
       console.log('#online,', msg);
+      let clientList = msg.clientList;
+      currentUserCount = clientList.length;
+      for (let i = 0; i < currentUserCount; i++) {
+        let imgObj = $(`#img${i + 1}`);
+        if (msg.action === 'leave') {
+          $(`img[unionid='${msg.unionid}']`).attr('src', defaultAvatar);
+          location.reload();
+        }
+        imgObj.attr('src', clientList[i].avatar);
+        imgObj.attr('unionid', clientList[i].client)
+      }
+    });
+    socket.on('start', unionid => {
+      if (!unionid) {
+        $.toast("系统异常");
+        return
+      }
+      const winner = $(`img[unionid='${unionid}']`).prev().attr('class').split(' ')[1];
+      startAni(currentUserCount, winner, unionid)
     });
     window.socket = socket;
-  })
+  });
+
+  function start() {
+    window.socket.emit('drink', {"abc": "d"})
+  }
+
+  function startAni(count, winner, unionid) {
+    let i = 1;
+    const interval = count * 600;
+    const intervalOffset = count * 100;
+    const total = count * 2;
+    while (i < total) {
+      let pos = i % count + 1;
+
+      function show() {
+        $(`.pos${pos}`).fadeIn("slow")
+      }
+
+      function hideAll() {
+        for (let i = 0; i < 7; i++) {
+          $(`.pos${i}`).fadeOut('slow')
+        }
+      }
+
+      setTimeout(show, i * interval);
+      setTimeout(hideAll, i * interval + intervalOffset);
+      i++;
+    }
+
+    function showWinner() {
+      $(`.${winner}`).fadeIn("slow");
+      $.toast(`胜者是:${unionid}`);
+    }
+
+    setTimeout(showWinner, total * interval + intervalOffset);
+  }
+
 </script>
 </body>
 </html>
