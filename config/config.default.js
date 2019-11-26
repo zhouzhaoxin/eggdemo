@@ -1,6 +1,14 @@
 module.exports = appInfo => {
   const config = exports = {};
 
+  config.cluster = {
+    listen: {
+      path: '',
+      port: 7008,
+      hostname: '0.0.0.0',
+    }
+  };
+
   config.keys = appInfo.name + '_1523266936854_6353';
 
   config.middleware = ['errorHandler'];
