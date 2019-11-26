@@ -12,7 +12,6 @@ class DrinkController extends Controller {
         app.logger.error(error);
       }
     });
-
   }
 }
 

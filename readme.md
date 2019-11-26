@@ -46,10 +46,14 @@
 .
 ```
 ## 运行
+[需要提前在本地安装redis](https://redis.io/)
 ```
 $ npm install
 $ npm run dev
-需要提前在本地安装redis，可在配置文件中修改
+请求路径：
+    浏览器打开标签1: http://127.0.0.1:7001/drink?unionid=a&room=demo
+    浏览器打开标签2: http://127.0.0.1:7001/drink?unionid=b&room=demo
+    浏览器打开标签2: http://127.0.0.1:7001/drink?unionid=d&room=demo
 ```
 
 ## 使用
