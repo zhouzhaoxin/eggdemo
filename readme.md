@@ -83,3 +83,46 @@ $ cd baseDir
 $ npm install --production
 $ tar -zcvf ../release.tgz .
 ```
+
+## 使用docker模拟部署
+系统环境：ubuntu 18.04 bionic amd64
+工作目录：/home/apple/learn/egg
+```shell script
+
+```
+#### 安装docker
+**配置docker镜像**
+```shell script
+$ vim /etc/docker/daemon.json
+添加并保存
+    {
+      "registry-mirrors": [
+        "https://dockerhub.azk8s.cn",
+        "https://reg-mirror.qiniu.com"
+      ]
+    }
+$ sudo systemctl daemon-reload
+$ sudo systemctl restart docker
+```
+
+#### 搭建nginx
+**启动Nginx临时服务**
+```shell script
+sudo docker container run -d -p 127.0.0.1:8080:80 --rm --name mynginx nginx
+```
+
+**将docker中配置文件拷贝到本地当前目录**
+```shell script
+$ sudo docker container cp mynginx:/etc/nginx .
+# 当前目录会多出一个nginx目录
+$ mv nginx conf
+$ sudo docker container stop mynginx
+```
+
+**启动使用本地nginx配置文件的docker nginx**
+```shell script
+$ sudo docker container run -d -p 127.0.0.1:8080:80 --rm --name mynginx --volume "$PWD/conf":/etc/nginx nginx
+# 此时访问localhost:80可确认安装是否成功
+# 关闭nginx可以使用 sudo docker container stop mynginx
+$ sudo docker exec mynginx nginx -s reload # 使用此命令重新加载配置文件
+```
