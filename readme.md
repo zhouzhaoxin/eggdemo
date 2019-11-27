@@ -76,3 +76,10 @@ socket.emit('exchange', {
 
 ## 注意
 在对restful请求参数校验时使用的validate的参数需要参考[传送门](https://github.com/node-modules/parameter)
+
+## 部署
+```
+$ cd baseDir
+$ npm install --production
+$ tar -zcvf ../release.tgz .
+```
