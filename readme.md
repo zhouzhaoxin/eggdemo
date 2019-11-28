@@ -1,8 +1,8 @@
-## 喝酒小游戏
+# 喝酒小游戏
 KTV包房喝酒小游戏，用户进入包房打开游戏，房主开始游戏后，系统随即选择一名幸运儿给予随即奖惩
 ![喝酒小游戏前端](drink.png)
 
-## 本地运行
+# 本地运行
 1. [在本地安装redis](https://redis.io/):按照默认安装即可
 2. 运行
 ```shell script
@@ -19,18 +19,18 @@ $ npm run dev
     浏览器打开标签2: http://127.0.0.1:7008/drink?unionid=d&room=demo
 ```
 
-## 模拟线上运行（使用docker部署）
+# 模拟线上运行（使用docker部署）
 系统环境：ubuntu 18.04 bionic amd64 <br>
 工作目录：/home/apple/learn/egg
 
-### 安装docker
+## 安装docker
 [docker deb 安装包下载](https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/)
 
-### 安装docker-compose
-**使用官方提供方式安装**<br>
+## 安装docker-compose
+#### 使用官方提供方式安装
 [docker-compose官方安装地址](https://docs.docker.com/compose/install/)<br>
 
-**自己安装**<br>
+#### 自己安装
 如果使用官方提供的方式下载docker-compose过慢，
 可以使用下面命令获取docker-compose 地址，然后自己选择其他的方式下载（wget等）
 ```shell script
@@ -43,7 +43,7 @@ https://github.com/docker/compose/releases/download/1.25.0/docker-compose-Linux-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-**配置docker镜像**<br>
+#### 配置docker镜像
 官方docker很慢，配置国内镜像可提高docker使用效率
 ```shell script
 $ vim /etc/docker/daemon.json
