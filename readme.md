@@ -20,8 +20,13 @@ $ npm run dev
 ```
 
 # 模拟线上运行（使用docker部署）
-系统环境：ubuntu 18.04 bionic amd64 <br>
-工作目录：/home/apple/learn/egg
+#### 系统环境
+ubuntu 18.04 bionic amd64
+#### 工作目录
+/home/apple/learn/egg
+## 运行图
+本次模拟项目运行在三台服务器上：如下所示
+![docker服务示例](docker-server.png)
 
 ## 安装docker
 [docker deb 安装包下载](https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/)
@@ -57,13 +62,24 @@ $ vim /etc/docker/daemon.json
 $ sudo systemctl daemon-reload
 $ sudo systemctl restart docker
 ```
+## 制作镜像
+```shell script
+$ mkdir -p /home/apple/learn/egg/source
+$ mkdir -p /home/apple/learn/egg/server
+$ git clone https://github.com/zhouzhaoxin/eggdemo.git /home/apple/learn/egg/source
+$ cd /home/apple/learn/egg/source
+$ tar -zcvf /home/apple/learn/egg/source/deploy/release.tgz . --exclude=deploy
+$ cd deploy
+$ make start
+服务已经启动,可访问以下url查看效果
+    127.0.0.1:8090/drink?unionid=a&room=demo
+    127.0.0.1:8091/drink?unionid=b&room=demo
+```
 
-
-
-## 参考
+# 参考
 [egg官方文档](https://eggjs.org/zh-cn/intro/index.html)
 
-## 目录结构
+# 目录结构
 ```
 .
 ├── app 
@@ -102,10 +118,12 @@ $ sudo systemctl restart docker
 │   └── test.js
 .
 ```
-## 使用
-#### p2p
-请求路径为`/`
-请求成功后打开命令行，用下边的命令发送消息
+# 其他
+## p2p聊天室
+项目实现了p2p聊天室请求路径为`/`
+
+## 运行
+启动项目后，请求根地址，然后后打开控制台，用下边的命令发送消息
 ```
 socket.emit('exchange', {
   target: 'Dkn3UXSu8_jHvKBmAAHW',
@@ -114,21 +132,17 @@ socket.emit('exchange', {
   },
 });
 ```
-#### 小游戏 restful
+## restful demo
 请求路径`/api/game/drink` 未完成，但展示了restful的用法
 
-## 注意
-在对restful请求参数校验时使用的validate的参数需要参考[传送门](https://github.com/node-modules/parameter)
 
-## 部署
-
-#### 搭建nginx
-**启动Nginx临时服务**
+# 搭建nginx
+## 启动Nginx临时服务
 ```shell script
 sudo docker container run -d -p 127.0.0.1:8080:80 --rm --name mynginx nginx
 ```
 
-**将docker中配置文件拷贝到本地当前目录**
+## 将docker中配置文件拷贝到本地当前目录
 ```shell script
 $ sudo docker container cp mynginx:/etc/nginx .
 # 当前目录会多出一个nginx目录
@@ -136,22 +150,18 @@ $ mv nginx conf
 $ sudo docker container stop mynginx
 ```
 
-**启动使用本地nginx配置文件的docker nginx**
+## 启动使用本地nginx配置文件的docker nginx
 ```shell script
 $ sudo docker container run -d -p 127.0.0.1:8080:80 --rm --name mynginx --volume "$PWD/conf":/etc/nginx nginx
 # 此时访问localhost:80可确认安装是否成功
 # 关闭nginx可以使用 sudo docker container stop mynginx
 $ sudo docker exec mynginx nginx -s reload # 使用此命令重新加载配置文件
 ```
+# 注意
+## restful
+在对restful请求参数校验时使用的validate的参数需要参考[传送门](https://github.com/node-modules/parameter)
 
-#### 构建项目
-```
-$ cd baseDir
-$ npm install --production
-$ tar -zcvf /home/apple/learn/egg/server/release.tgz .
-```
-
-#### docker-compose 查询错误
+## 使用docker-compose查询错误信息
 ```shell script
 $ docker-compose --verbose up
 $ sudo docker exec -it [container-name] sh
