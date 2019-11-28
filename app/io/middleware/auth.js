@@ -13,7 +13,7 @@ module.exports = () => {
     const { room, userId } = query;
     const rooms = [ room ];
 
-    logger.debug('#user_info', id, room, userId);
+    logger.info('#user_info', id, room, userId);
 
     const tick = (id, msg) => {
       logger.debug('#tick', id, msg);
