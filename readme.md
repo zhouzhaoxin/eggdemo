@@ -1,10 +1,67 @@
-## egg 项目示例
+## 喝酒小游戏
+KTV包房喝酒小游戏，用户进入包房打开游戏，房主开始游戏后，系统随即选择一名幸运儿给予随即奖惩
+![喝酒小游戏前端](drink.png)
+
+## 本地运行
+1. [在本地安装redis](https://redis.io/):按照默认安装即可
+2. 运行
+```shell script
+$ git clone https://github.com/zhouzhaoxin/eggdemo.git
+$ cd eggdemo
+$ npm install 
+$ npm run dev
+```
+3. 打开三个标签模拟三个用户加入demo包房
+```
+请求路径：
+    浏览器打开标签1: http://127.0.0.1:7008/drink?unionid=a&room=demo
+    浏览器打开标签2: http://127.0.0.1:7008/drink?unionid=b&room=demo
+    浏览器打开标签2: http://127.0.0.1:7008/drink?unionid=d&room=demo
+```
+
+## 模拟线上运行（使用docker部署）
+系统环境：ubuntu 18.04 bionic amd64
+工作目录：/home/apple/learn/egg
+
+#### 安装docker
+[docker deb 安装包下载](https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/)
+
+#### 安装docker-compose
+**使用官方提供方式安装**
+[docker-compose官方安装地址](https://docs.docker.com/compose/install/)<br>
+
+**自己安装**
+如果使用官方提供的方式下载docker-compose过慢，
+可以使用下面命令获取docker-compose 地址，然后自己选择其他的方式下载（wget等）
+```shell script
+$ echo "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" 
+https://github.com/docker/compose/releases/download/1.25.0/docker-compose-Linux-x86_64
+```
+下载完成后的docker-compose可执行文件放到:/usr/local/bin/docker-compose， 
+再赋予其执行权限即可
+```shell script
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+**配置docker镜像**
+官方docker很慢，配置国内镜像可提高docker使用效率
+```shell script
+$ vim /etc/docker/daemon.json
+添加并保存
+    {
+      "registry-mirrors": [
+        "https://dockerhub.azk8s.cn",
+        "https://reg-mirror.qiniu.com"
+      ]
+    }
+$ sudo systemctl daemon-reload
+$ sudo systemctl restart docker
+```
+
+
+
+## 参考
 [egg官方文档](https://eggjs.org/zh-cn/intro/index.html)
-## 示例内容
-- 返回html模板
-- 使用ajax 轮训配合egg restful 接口实现小游戏
-- 使用socket.io实现p2p chat
-- 使用socket.io实现小游戏
 
 ## 目录结构
 ```
@@ -45,17 +102,6 @@
 │   └── test.js
 .
 ```
-## 运行
-[需要提前在本地安装redis](https://redis.io/)
-```
-$ npm install
-$ npm run dev
-请求路径：
-    浏览器打开标签1: http://127.0.0.1:7001/drink?unionid=a&room=demo
-    浏览器打开标签2: http://127.0.0.1:7001/drink?unionid=b&room=demo
-    浏览器打开标签2: http://127.0.0.1:7001/drink?unionid=d&room=demo
-```
-
 ## 使用
 #### p2p
 请求路径为`/`
@@ -71,15 +117,42 @@ socket.emit('exchange', {
 #### 小游戏 restful
 请求路径`/api/game/drink` 未完成，但展示了restful的用法
 
-#### 小游戏 websocket
-请求路径`/drink`
-
 ## 注意
 在对restful请求参数校验时使用的validate的参数需要参考[传送门](https://github.com/node-modules/parameter)
 
 ## 部署
+
+#### 搭建nginx
+**启动Nginx临时服务**
+```shell script
+sudo docker container run -d -p 127.0.0.1:8080:80 --rm --name mynginx nginx
+```
+
+**将docker中配置文件拷贝到本地当前目录**
+```shell script
+$ sudo docker container cp mynginx:/etc/nginx .
+# 当前目录会多出一个nginx目录
+$ mv nginx conf
+$ sudo docker container stop mynginx
+```
+
+**启动使用本地nginx配置文件的docker nginx**
+```shell script
+$ sudo docker container run -d -p 127.0.0.1:8080:80 --rm --name mynginx --volume "$PWD/conf":/etc/nginx nginx
+# 此时访问localhost:80可确认安装是否成功
+# 关闭nginx可以使用 sudo docker container stop mynginx
+$ sudo docker exec mynginx nginx -s reload # 使用此命令重新加载配置文件
+```
+
+#### 构建项目
 ```
 $ cd baseDir
 $ npm install --production
-$ tar -zcvf ../release.tgz .
+$ tar -zcvf /home/apple/learn/egg/server/release.tgz .
+```
+
+#### docker-compose 查询错误
+```shell script
+$ docker-compose --verbose up
+$ sudo docker exec -it [container-name] sh
 ```

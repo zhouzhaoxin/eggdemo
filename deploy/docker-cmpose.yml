@@ -1,0 +1,35 @@
+version: '3.6'
+services:
+  redis:
+    image: "redis:latest"
+    command: ["sysctl", "vm.overcommit_memory=1"]
+    command: ["redis-server", "--bind", "0.0.0.0", "--port", "6380"]
+    hostname: redis
+    ports:
+      - 6380:6380
+    networks:
+      - redisa-net
+      - redisb-net
+
+  weba:
+    build: .
+    tty: true
+    ports:
+      - 8090:8090
+    networks:
+      - redisa-net
+    depends_on:
+      - redis
+  webb:
+    build: .
+    tty: true
+    ports:
+      - 8091:8090
+    networks:
+      - redisb-net
+    depends_on:
+      - redis
+
+networks:
+  redisa-net:
+  redisb-net:
