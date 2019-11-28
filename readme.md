@@ -20,17 +20,17 @@ $ npm run dev
 ```
 
 ## 模拟线上运行（使用docker部署）
-系统环境：ubuntu 18.04 bionic amd64
+系统环境：ubuntu 18.04 bionic amd64 <br>
 工作目录：/home/apple/learn/egg
 
-#### 安装docker
+### 安装docker
 [docker deb 安装包下载](https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/)
 
-#### 安装docker-compose
-**使用官方提供方式安装**
+### 安装docker-compose
+**使用官方提供方式安装**<br>
 [docker-compose官方安装地址](https://docs.docker.com/compose/install/)<br>
 
-**自己安装**
+**自己安装**<br>
 如果使用官方提供的方式下载docker-compose过慢，
 可以使用下面命令获取docker-compose 地址，然后自己选择其他的方式下载（wget等）
 ```shell script
@@ -43,7 +43,7 @@ https://github.com/docker/compose/releases/download/1.25.0/docker-compose-Linux-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-**配置docker镜像**
+**配置docker镜像**<br>
 官方docker很慢，配置国内镜像可提高docker使用效率
 ```shell script
 $ vim /etc/docker/daemon.json
