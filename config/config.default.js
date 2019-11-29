@@ -34,12 +34,13 @@ module.exports = appInfo => {
   config.io = {
     init: {
       wsEngine: 'ws',
-    }, // passed to engine.io
+    },
     namespace: {
+      // 默认匹配路由
       '/': {
-        connectionMiddleware: [
-          'auth',
-        ],
+        // 仅在用户连接时调用
+        connectionMiddleware: [],
+        // 作用于每一个数据包，一般用来解密
         packetMiddleware: [],
       },
       '/drink': {
