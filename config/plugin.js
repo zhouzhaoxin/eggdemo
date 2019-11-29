@@ -18,7 +18,6 @@ exports.nunjucks = {
   package: 'egg-view-nunjucks',
 };
 
-// 此模块还没搞懂
 exports.assets = {
   enable: false,
   package: 'egg-view-assets',

@@ -34,12 +34,10 @@ module.exports = appInfo => {
   config.io = {
     init: {
       wsEngine: 'ws',
-    }, // passed to engine.io
+    },
     namespace: {
       '/': {
-        connectionMiddleware: [
-          'auth',
-        ],
+        connectionMiddleware: [],
         packetMiddleware: [],
       },
       '/drink': {
@@ -47,7 +45,6 @@ module.exports = appInfo => {
         packetMiddleware: [],
       },
     },
-
     redis: {
       host: 'redis',
       port: 6380,

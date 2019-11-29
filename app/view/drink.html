@@ -367,6 +367,10 @@
       console.log('#connect,', id, socket);
     });
 
+    socket.on('init', () => {
+
+    });
+
     // 处理用户加入和离开，目前只是使用本方法测试，所以把用户初始化也写到此处
     socket.on('online', msg => {
       console.log('#online,', msg);

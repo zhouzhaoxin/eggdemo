@@ -8,15 +8,11 @@ module.exports = () => {
     const {app, socket, logger, helper} = ctx;
     const nsp = app.io.of('/drink');
 
-    const query = socket.handshake.query;
-    // todo 判断用户存在后不允许再次加入房间
-
     // 用户信息
+    const query = socket.handshake.query;
     const {room, unionid} = query;
-    // 使用unionid作为socket id
     socket.id = unionid;
     const rooms = [room];
-
     const tick = (unionid, msg) => {
       logger.debug('#tick', unionid, msg);
 
@@ -29,12 +25,11 @@ module.exports = () => {
       });
     };
 
-    // 检查房间是否存在，不存在则踢出用户
     // 备注：此处 app.redis 与插件无关，可用其他存储代替
     const hasRoom = await app.redis.get(`${PREFIX}:${room}`);
     const hasAvatar = await app.redis.get(`${drinkPlayerPrefix}_${unionid}`);
     if (!(hasRoom && hasAvatar)) {
-      console.log("no room or avatar", unionid);
+      logger.error("no room or avatar", unionid);
       tick(unionid, {
         type: 'deleted',
         message: 'deleted, room has been deleted.',
@@ -87,6 +82,5 @@ module.exports = () => {
         avatar: hasAvatar,
       });
     });
-
   };
 };
