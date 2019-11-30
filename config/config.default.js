@@ -1,37 +1,35 @@
-module.exports = appInfo => {
-  const config = exports = {};
-
-  config.cluster = {
+module.exports = {
+  cluster: {
     listen: {
       path: '',
       port: 7008,
       hostname: '0.0.0.0',
     }
-  };
+  },
+  keys: '_1523266936854_6353',
+  middleware: ['errorHandler'],
+  errorHandler: {match: '/api'},
 
-  config.keys = appInfo.name + '_1523266936854_6353';
-
-  config.middleware = ['errorHandler'];
-
-  config.errorHandler = {match: '/api'};
-
-  config.view = {
+  view: {
     defaultViewEngine: 'nunjucks',
     mapping: {
       '.html': 'nunjucks',
     },
-  };
+  },
 
-  config.redis = {
+  sentry: {
+    dsn: 'http://b7ac4f9f6dbd488a9e9fb73f9c754eca@wowsentry.ktvsky.com/20',
+  },
+  redis: {
     client: {
-      port: 6379,
       host: '127.0.0.1',
+      port: 6379,
       password: '',
-      db: 0,
+      db: '0',
     },
-  };
-
-  config.io = {
+    agent: true
+  },
+  io: {
     init: {
       wsEngine: 'ws',
     },
@@ -53,7 +51,8 @@ module.exports = appInfo => {
       host: '127.0.0.1',
       port: 6379,
     },
-  };
+  }
+}
+;
 
-  return config;
-};
+

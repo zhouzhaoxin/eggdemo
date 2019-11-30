@@ -1,5 +1,8 @@
 // 执行初始化操作
 // 注意：框架会有启动的超时检测， 在初始化生命周期函数中不建议做太耗时的操作
+const Raven = require('raven');
+const assert = require('assert');
+
 class AppBootHook {
   constructor(app) {
     this.app = app;
@@ -30,6 +33,10 @@ class AppBootHook {
     // this.app.loader.loadToContext(path.join(__dirname, 'app/tasks'), 'tasks', {
     //   fieldClass: 'tasksClasses',
     // });
+    const config = this.app.config.sentry;
+    assert(config.dsn, '[egg-sentry][config] dsn is required');
+    Raven.config(config.dsn).install();
+    this.app.sentry = Raven;
   }
 
   async willReady() {
