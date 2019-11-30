@@ -16,9 +16,6 @@ module.exports = () => {
     const tick = (unionid, msg) => {
       logger.debug('#tick', unionid, msg);
 
-      // 踢出用户前发送消息
-      socket.emit(unionid, helper.parseMsg('deny', msg));
-
       // 调用 adapter 方法踢出用户，客户端触发 disconnect 事件
       nsp.adapter.remoteDisconnect(unionid, true, err => {
         logger.error(err);
