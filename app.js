@@ -6,7 +6,9 @@ const assert = require('assert');
 class AppBootHook {
   constructor(app) {
     this.app = app;
-    this.drinkPlayerPrefix = 'dpp'
+    this.drinkPlayerPrefix = 'dpp';
+    this.drinkPlayerRoomPrefix = 'dprp';
+    this.room = 'demo';
   }
 
   configWillLoad() {
@@ -43,7 +45,7 @@ class AppBootHook {
     // 所有的插件都已启动完毕，但是应用整体还未 ready
     // 可以做一些数据初始化等操作，这些操作成功才会启动应用
 
-     // 例如：从数据库加载数据到内存缓存
+    // 例如：从数据库加载数据到内存缓存
     // this.app.cacheData = await this.app.model.query(QUERY_CACHE_SQL);
 
     // drink游戏初始化：此处初始化假设系统有一个房间，并且系统存儲了六个用户的信息
@@ -53,16 +55,26 @@ class AppBootHook {
       await this.app.redis.set(demoRoomRedisKey, 'demo');
     }
     const playerARedisKey = `${this.drinkPlayerPrefix}_a`;
+    const playerARoomRedisKey = `${this.drinkPlayerRoomPrefix}_a`;
     const playerAAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/8678099f91d2c69a56fa9b49ee5f9674.jpeg';
     const playerA = await this.app.redis.get(playerARedisKey);
+    const roomA = await this.app.redis.get(playerARoomRedisKey);
     if (!playerA) {
       await this.app.redis.set(playerARedisKey, playerAAvatar);
     }
+    if (!roomA) {
+      await this.app.redis.set(playerARoomRedisKey, this.room)
+    }
     const playerBRedisKey = `${this.drinkPlayerPrefix}_b`;
+    const playerBRoomRedisKey = `${this.drinkPlayerRoomPrefix}_b`;
     const playerBAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/50141834945a8b0cba4166149583a6e4.jpeg';
     const playerB = await this.app.redis.get(playerBRedisKey);
+    const roomB = await this.app.redis.get(playerBRoomRedisKey);
     if (!playerB) {
       await this.app.redis.set(playerBRedisKey, playerBAvatar);
+    }
+    if (!roomB) {
+      await this.app.redis.set(playerBRoomRedisKey, this.room)
     }
     const playerCRedisKey = `${this.drinkPlayerPrefix}_c`;
     const playerCAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/c37615c4ff83ba4dc910265d41d96379.jpeg';

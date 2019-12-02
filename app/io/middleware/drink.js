@@ -1,7 +1,6 @@
-'use strict';
-
 const PREFIX = 'room';
 const drinkPlayerPrefix = 'dpp';
+const drinkPlayerRoomPrefix = 'dprp';
 
 module.exports = () => {
   return async (ctx, next) => {
@@ -10,27 +9,18 @@ module.exports = () => {
 
     // 用户信息
     const query = socket.handshake.query;
-    const {room, unionid} = query;
+    const {unionid} = query;
+    const room = await app.redis.get(`${drinkPlayerRoomPrefix}_${unionid}`);
+    if (!room) {
+      logger.error("没有房间");
+      return
+    }
     socket.id = unionid;
     const rooms = [room];
-    const tick = (unionid, msg) => {
-      logger.debug('#tick', unionid, msg);
 
-      // 调用 adapter 方法踢出用户，客户端触发 disconnect 事件
-      nsp.adapter.remoteDisconnect(unionid, true, err => {
-        logger.error(err);
-      });
-    };
-
-    // 备注：此处 app.redis 与插件无关，可用其他存储代替
-    const hasRoom = await app.redis.get(`${PREFIX}:${room}`);
     const hasAvatar = await app.redis.get(`${drinkPlayerPrefix}_${unionid}`);
-    if (!(hasRoom && hasAvatar)) {
-      logger.error("no room or avatar", unionid);
-      tick(unionid, {
-        type: 'deleted',
-        message: 'deleted, room has been deleted.',
-      });
+    if (!hasAvatar) {
+      logger.error("没有头像");
       return;
     }
 
@@ -59,7 +49,7 @@ module.exports = () => {
     await next();
 
     // 用户离开
-    logger.debug('#leave', room);
+    logger.info('#leave', room);
 
     // 在线列表
     nsp.adapter.clients(rooms, async (err, clients) => {
