@@ -50,7 +50,7 @@ module.exports = {
     },
 
     redis: {
-      host: '127.0.0.1',
+      host: '10.10.52.29',
       port: 6379,
     },
   }
