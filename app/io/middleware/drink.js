@@ -1,4 +1,3 @@
-const PREFIX = 'room';
 const drinkPlayerPrefix = 'dpp';
 const drinkPlayerRoomPrefix = 'dprp';
 
@@ -10,13 +9,14 @@ module.exports = () => {
     // 用户信息
     const query = socket.handshake.query;
     const {unionid} = query;
+    socket.id = unionid;
     const room = await app.redis.get(`${drinkPlayerRoomPrefix}_${unionid}`);
+    const rooms = [room];
     if (!room) {
-      logger.error("没有房间");
+      // 发送sentry
+      logger.error(unionid);
       return
     }
-    socket.id = unionid;
-    const rooms = [room];
 
     const hasAvatar = await app.redis.get(`${drinkPlayerPrefix}_${unionid}`);
     if (!hasAvatar) {
@@ -65,6 +65,7 @@ module.exports = () => {
       nsp.to(room).emit('online', {
         clientList,
         action: 'leave',
+        master: '',
         unionid: unionid,
         avatar: hasAvatar,
       });
