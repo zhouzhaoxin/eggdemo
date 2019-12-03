@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "egg-bin dev --cluster --sticky",
     "docker-start": "EGG_SERVER_ENV=docker egg-scripts start --daemon",
-    "docker-stop": "EGG_SERVER_ENV=docker egg-scripts stop"
+    "docker-stop": "EGG_SERVER_ENV=docker egg-scripts stop",
+    "k1-dev": "EGG_SERVER_ENV=k1 egg-bin dev --cluster --sticky"
   },
   "author": "",
   "license": "ISC",

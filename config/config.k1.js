@@ -23,7 +23,7 @@ module.exports = {
   redis: {
     clients: {
       kbar: {
-        host: '127.0.0.1',
+        host: '10.10.52.29',
         port: 6379,
         password: '',
         db: '0',

@@ -50,61 +50,61 @@ class AppBootHook {
 
     // drink游戏初始化：此处初始化假设系统有一个房间，并且系统存儲了六个用户的信息
     const demoRoomRedisKey = 'room:demo';
-    const room = await this.app.redis.get(demoRoomRedisKey);
+    const room = await this.app.redis.get('kbar').get(demoRoomRedisKey);
     if (!room) {
-      await this.app.redis.set(demoRoomRedisKey, 'demo');
+      await this.app.redis.get('kbar').set(demoRoomRedisKey, 'demo');
     }
     const playerARedisKey = `${this.drinkPlayerPrefix}_a`;
     const playerARoomRedisKey = `${this.drinkPlayerRoomPrefix}_a`;
     const playerAAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/8678099f91d2c69a56fa9b49ee5f9674.jpeg';
-    const playerA = await this.app.redis.get(playerARedisKey);
-    const roomA = await this.app.redis.get(playerARoomRedisKey);
+    const playerA = await this.app.redis.get('kbar').get(playerARedisKey);
+    const roomA = await this.app.redis.get('kbar').get(playerARoomRedisKey);
     if (!playerA) {
-      await this.app.redis.set(playerARedisKey, playerAAvatar);
+      await this.app.redis.get('kbar').set(playerARedisKey, playerAAvatar);
     }
     if (!roomA) {
-      await this.app.redis.set(playerARoomRedisKey, this.room)
+      await this.app.redis.get('kbar').set(playerARoomRedisKey, this.room)
     }
     const playerBRedisKey = `${this.drinkPlayerPrefix}_b`;
     const playerBRoomRedisKey = `${this.drinkPlayerRoomPrefix}_b`;
     const playerBAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/50141834945a8b0cba4166149583a6e4.jpeg';
-    const playerB = await this.app.redis.get(playerBRedisKey);
-    const roomB = await this.app.redis.get(playerBRoomRedisKey);
+    const playerB = await this.app.redis.get('kbar').get(playerBRedisKey);
+    const roomB = await this.app.redis.get('kbar').get(playerBRoomRedisKey);
     if (!playerB) {
-      await this.app.redis.set(playerBRedisKey, playerBAvatar);
+      await this.app.redis.get('kbar').set(playerBRedisKey, playerBAvatar);
     }
     if (!roomB) {
-      await this.app.redis.set(playerBRoomRedisKey, this.room)
+      await this.app.redis.get('kbar').set(playerBRoomRedisKey, this.room)
     }
     const playerCRedisKey = `${this.drinkPlayerPrefix}_c`;
     const playerCAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/c37615c4ff83ba4dc910265d41d96379.jpeg';
-    const playerC = await this.app.redis.get(playerCRedisKey);
+    const playerC = await this.app.redis.get('kbar').get(playerCRedisKey);
     if (!playerC) {
-      await this.app.redis.set(playerCRedisKey, playerCAvatar);
+      await this.app.redis.get('kbar').set(playerCRedisKey, playerCAvatar);
     }
     const playerDRedisKey = `${this.drinkPlayerPrefix}_d`;
     const playerDAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/9829d79422a5284ad2460f2d18c291b5.jpeg';
-    const playerD = await this.app.redis.get(playerDRedisKey);
+    const playerD = await this.app.redis.get('kbar').get(playerDRedisKey);
     if (!playerD) {
-      await this.app.redis.set(playerDRedisKey, playerDAvatar);
+      await this.app.redis.get('kbar').set(playerDRedisKey, playerDAvatar);
     }
     const playerERedisKey = `${this.drinkPlayerPrefix}_e`;
     const playerEAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/156ae5386f0691ce97beaf7e4563d2a7.jpeg';
-    const playerE = await this.app.redis.get(playerERedisKey);
+    const playerE = await this.app.redis.get('kbar').get(playerERedisKey);
     if (!playerE) {
-      await this.app.redis.set(playerERedisKey, playerEAvatar);
+      await this.app.redis.get('kbar').set(playerERedisKey, playerEAvatar);
     }
     const playerFRedisKey = `${this.drinkPlayerPrefix}_f`;
     const playerFAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/c3b9da1dacdb8b3f427eaf8e2130962a.jpeg';
-    const playerF = await this.app.redis.get(playerFRedisKey);
+    const playerF = await this.app.redis.get('kbar').get(playerFRedisKey);
     if (!playerF) {
-      await this.app.redis.set(playerFRedisKey, playerFAvatar);
+      await this.app.redis.get('kbar').set(playerFRedisKey, playerFAvatar);
     }
     const playerGRedisKey = `${this.drinkPlayerPrefix}_g`;
     const playerGAvatar = 'https://qncweb.ktvsky.com/20191122/leimeng/191fb9b91ec2f470be63f3f09ce5a3c4.jpeg';
-    const playerG = await this.app.redis.get(playerGRedisKey);
+    const playerG = await this.app.redis.get('kbar').get(playerGRedisKey);
     if (!playerG) {
-      await this.app.redis.set(playerGRedisKey, playerGAvatar);
+      await this.app.redis.get('kbar').set(playerGRedisKey, playerGAvatar);
     }
   }
 

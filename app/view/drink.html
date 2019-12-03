@@ -353,10 +353,11 @@
       start()
     });
     // 加入房间
+    const unionid = $("#unionid").val();
     const socket = io('/drink', {
       query: {
         room: $("#room").val(),
-        unionid: $("#unionid").val(),
+        unionid: unionid,
       },
       transports: ['websocket']
     });
@@ -366,8 +367,7 @@
       const id = socket.id;
       console.log('#connect,', id, socket);
     });
-
-    // 处理用户加入和离，目前只是使用本方法测试，所以把用户初始化也写到此处
+    // 处理用户加入和离开
     socket.on('online', msg => {
       console.log('#online,', msg);
       let clientList = msg.clientList;
