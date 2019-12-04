@@ -13,8 +13,6 @@ module.exports = () => {
     const room = await app.redis.get(`${drinkPlayerRoomPrefix}_${unionid}`);
     const rooms = [room];
     if (!room) {
-      // 发送sentry
-      logger.error(unionid);
       return
     }
 

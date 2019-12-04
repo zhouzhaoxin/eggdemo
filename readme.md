@@ -166,3 +166,5 @@ $ sudo docker exec mynginx nginx -s reload # 使用此命令重新加载配置�
 $ docker-compose --verbose up
 $ sudo docker exec -it [container-name] sh
 ```
+
+/usr/share/node-v8.0.0-linux-x64/lib/node_modules/n/bin/n

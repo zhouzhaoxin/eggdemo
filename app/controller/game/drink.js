@@ -6,10 +6,19 @@ const rule = {
 };
 
 class DrinkController extends Controller {
-  // 玩游戏
+  // 检验用户是否绑定房台码
   async index() {
-    this.ctx.validate(rule, this.ctx.request.body);
-    this.ctx.body = {'openid': 'abc', 'unionid': 'def'};
+    const query = this.ctx.request.query;
+    const unionid = query.unionid;
+    this.ctx.validate(rule, query);
+    const key = this.config.RDS_KEY.user_mac + unionid;
+    const roomid = await this.app.redis.get('kbar').get(key);
+    if (!roomid) {
+      this.logger.error('房间不存在' + unionid);
+      // 抛出异常，若不返回status则会使用500作为默认status
+      throw {message: '房间不存在'};
+    }
+    this.ctx.body = {'data': query};
   }
 }
 
