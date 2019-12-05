@@ -11,10 +11,9 @@ class DrinkController extends Controller {
     const query = this.ctx.request.query;
     const unionid = query.unionid;
     this.ctx.validate(rule, query);
-    const key = this.config.RDS_KEY.user_mac + unionid;
-    const roomid = await this.app.redis.get('kbar').get(key);
+    const roomid = await this.ctx.service.drink.getBindRoom(unionid);
     if (!roomid) {
-      this.logger.error('房间不存在' + unionid);
+      this.logger.error('房间不存在 ' + unionid);
       // 抛出异常，若不返回status则会使用500作为默认status
       throw {message: '房间不存在'};
     }

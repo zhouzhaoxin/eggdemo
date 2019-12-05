@@ -357,9 +357,15 @@
     const socket = io('/drink', {
       query: {
         room: $("#room").val(),
-        unionid: unionid,
+        unionid: 'o6qE3t9aa--FZnaWxj7BaR6m1xlA',
+          openid: 'o7bwA1PnZn5sgh0SVmKxgA16uxwA'
       },
       transports: ['websocket']
+    });
+
+    socket.on('o6qE3t9aa--FZnaWxj7BaR6m1xlA#o7bwA1PnZn5sgh0SVmKxgA16uxwA', msg => {
+       console.log("单独接受");
+       console.log(msg);
     });
 
     // 监听用户连接时间
@@ -370,17 +376,17 @@
     // 处理用户加入和离开
     socket.on('online', msg => {
       console.log('#online,', msg);
-      let clientList = msg.clientList;
-      currentUserCount = clientList.length;
-      for (let i = 0; i < currentUserCount; i++) {
-        let imgObj = $(`#img${i + 1}`);
-        if (msg.action === 'leave') {
-          $(`img[unionid='${msg.unionid}']`).attr('src', defaultAvatar);
-          location.reload();
-        }
-        imgObj.attr('src', clientList[i].avatar);
-        imgObj.attr('unionid', clientList[i].client)
-      }
+      // let clientList = msg.clientList;
+      // currentUserCount = clientList.length;
+      // for (let i = 0; i < currentUserCount; i++) {
+      //   let imgObj = $(`#img${i + 1}`);
+      //   if (msg.action === 'leave') {
+      //     $(`img[unionid='${msg.unionid}']`).attr('src', defaultAvatar);
+      //     location.reload();
+      //   }
+      //   imgObj.attr('src', clientList[i].avatar);
+      //   imgObj.attr('unionid', clientList[i].client)
+      // }
     });
     socket.on('start', unionid => {
       if (!unionid) {
