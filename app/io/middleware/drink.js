@@ -82,6 +82,5 @@ module.exports = () => {
         action: 'leave',
       });
     });
-
   };
 };
