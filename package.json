@@ -21,6 +21,6 @@
     "raven": "^2.6.4"
   },
   "devDependencies": {
-    "egg-bin": "^4.14.0"
+    "egg-bin": "^5.9.0"
   }
 }
